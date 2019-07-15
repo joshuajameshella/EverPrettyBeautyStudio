@@ -1,0 +1,48 @@
+export const styles = {
+  header: {
+    position: 'relative',
+    top: 0,
+    left: 0,
+    width: '100vw',
+    height: '20vh',
+    backgroundColor: 'rgba(255, 255, 255, 0.5)',
+    transform: 'rotate(0deg)',
+    zIndex:10,
+    fontFamily: 'Muli, sans-serif',
+  },
+  logo: {
+    width: '30vw',
+    paddingTop: '2%',
+    marginLeft: '35vw',
+  },
+  leftHolder: {
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    width: '35vw',
+    height: '20vh',
+  },
+  rightHolder: {
+    position: 'absolute',
+    right: 0,
+    top: 0,
+    width: '35vw',
+    height: '20vh',
+  },
+  leftLink: {
+    position: 'relative',
+    float: 'right',
+    marginRight: '10%',
+    marginTop: '8vh',
+    textDecoration: 'none',
+    color: 'rgb(50, 50, 50)',
+  },
+  rightLink: {
+    position: 'relative',
+    float: 'left',
+    marginLeft: '10%',
+    marginTop: '8vh',
+    textDecoration: 'none',
+    color: 'rgb(50, 50, 50)',
+  },
+};
