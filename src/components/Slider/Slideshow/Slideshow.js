@@ -8,7 +8,7 @@ class Slideshow extends Component {
 		super(props);
 		this.state = {
 			currentSlide: 0,
-			slideInterval: 4000,
+			slideInterval: 6000,
 			showIndex: false,
 			showArrows: true,
 			effect: 'fade',
