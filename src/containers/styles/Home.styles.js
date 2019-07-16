@@ -4,14 +4,15 @@ export const styles = {
     top: 0,
     left: 0,
     width: '100vw',
-    height: '80vh',
+    height: '100vh',
     backgroundColor: 'rgb(255, 255, 255)',
   },
 
   slideshow: {
     position: 'relative',
     width: '100%',
-    height: '100%',
+    marginTop: '20vh',
+    height: '80vh',
     opacity: 0.90,
   },
 };

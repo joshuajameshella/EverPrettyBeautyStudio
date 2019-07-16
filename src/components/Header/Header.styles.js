@@ -1,19 +1,29 @@
 export const styles = {
   header: {
-    position: 'relative',
+    position: 'fixed',
     top: 0,
     left: 0,
     width: '100vw',
     height: '20vh',
-    backgroundColor: 'rgba(255, 255, 255, 0.5)',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
     transform: 'rotate(0deg)',
-    zIndex:10,
+    zIndex: 15,
     fontFamily: 'Muli, sans-serif',
+    // overflow: 'hidden',
   },
-  logo: {
+  logoBig: {
     width: '30vw',
-    paddingTop: '2%',
+    paddingTop: '3%',
     marginLeft: '35vw',
+    minWidth: 350,
+  },
+  logoSmall: {
+    position: 'absolute',
+    width: '25vw',
+    minWidth: 300,
+    paddingTop: 'calc((20vh - 77px) / 2)',
+    paddingBottom: 'calc((20vh - 77px) / 2)',
+    paddingLeft: '5vw'
   },
   leftHolder: {
     position: 'absolute',
@@ -44,5 +54,26 @@ export const styles = {
     marginTop: '8vh',
     textDecoration: 'none',
     color: 'rgb(50, 50, 50)',
+  },
+  menuHolder: {
+    position: 'absolute',
+    width: '60vw',
+    right: 0,
+    top: 0,
+    height: '20vh',
+  },
+  menuIcon: {
+    position: 'absolute',
+    height: '100%',
+    margin: 'calc(10vh - 28px)',
+    right: 0
+  },
+  menuCover: {
+    position: 'fixed',
+    top: '20vh',
+    left: 0,
+    width: '100vw',
+    height: '80vh',
+    backgroundColor: 'rgb(100, 100, 100)',
   },
 };

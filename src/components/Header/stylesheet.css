@@ -1,0 +1,19 @@
+#slide {
+    position: fixed;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    -webkit-animation: slide 5.5s forwards;
+    -webkit-animation-delay: 5s;
+    animation: slide 5.5s forwards;
+    animation-delay: 5s;
+}
+
+@-webkit-keyframes slide {
+    100% { down: 5s; }
+}
+
+@keyframes slide {
+    100% { down: 5s; }
+}
