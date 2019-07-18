@@ -13,6 +13,11 @@ class Home extends Component {
         <div style={styles.slideshow}>
           <Slideshow />
         </div>
+        <div style={styles.mottoContainer}>
+          <h1 style={styles.motto}>Find your</h1>
+          <h1 style={styles.pop}>UNIQUE</h1>
+          <h1 style={styles.motto}>style</h1>
+        </div>
       </div>
     )
   }

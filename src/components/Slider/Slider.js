@@ -3,8 +3,9 @@ import Slideshow from './Slideshow/Slideshow.js';
 
 const slides = [
   require('../../images/1.png'),
-  require('../../images/2.jpeg'),
   require('../../images/3.jpeg'),
+  require('../../images/4.jpeg'),
+  require('../../images/5.jpeg'),
 ];
 
 

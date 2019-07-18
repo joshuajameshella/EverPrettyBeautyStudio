@@ -92,9 +92,10 @@ export const styles = {
     height: '85vh',
     marginTop: '15vh',
     backgroundColor: 'rgb(220, 220, 220)',
-    paddingTop: '10vh',
+    paddingTop: '5vh',
     fontSize: 20,
     fontWeight: 300,
+    zIndex: 30,
   },
 
 };

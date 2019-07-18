@@ -12,19 +12,19 @@ import logo from '../../images/logo.png';
 
 const renderBig = () => (
   <div>
-    <div style={styles.leftHolder}>
+    <nav style={styles.leftHolder}>
       <NavLink to="/reviews" style={styles.leftLink} activeStyle={styles.activeLink} exact>{'REVIEWS'}</NavLink>
       <NavLink to="/treatments" style={styles.leftLink} activeStyle={styles.activeLink} exact>{'TREATMENTS'}</NavLink>
-    </div>
+    </nav>
 
     <a href="/">
       <img src={logo} alt={"Ever Pretty Beauty Studio Logo"} style={styles.logoBig} />
     </a>
 
-    <div style={styles.rightHolder}>
+    <nav style={styles.rightHolder}>
       <NavLink to="/gallery" style={styles.rightLink} activeStyle={styles.activeLink} exact>{'GALLERY'}</NavLink>
       <NavLink to="/contact" style={styles.rightLink} activeStyle={styles.activeLink} exact>{'CONTACT'}</NavLink>
-    </div>
+    </nav>
   </div>
 );
 
@@ -89,12 +89,12 @@ class Header extends Component {
 
             <Collapse in={this.state.buttonActive} timeout={1000}>
               <Paper elevation={4}>
-                <div style={styles.dropdownMenu}>
-                  <p><NavLink to="/treatments" className="dropdownLink" activeStyle={styles.activeLink} exact>{'TREATMENTS'}</NavLink></p>
+                <nav style={styles.dropdownMenu}>
+                  <NavLink to="/treatments" className="dropdownLink" activeStyle={styles.activeLink} exact>{'TREATMENTS'}</NavLink>
                   <NavLink to="/reviews" className="dropdownLink" activeStyle={styles.activeLink} exact>{'REVIEWS'}</NavLink>
                   <NavLink to="/gallery" className="dropdownLink" activeStyle={styles.activeLink} exact>{'GALLERY'}</NavLink>
                   <NavLink to="/contact" className="dropdownLink" activeStyle={styles.activeLink} exact>{'CONTACT'}</NavLink>
-                </div>
+                </nav>
               </Paper>
             </Collapse>
 
