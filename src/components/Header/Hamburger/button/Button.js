@@ -32,7 +32,7 @@ export const Button = props => {
 }
 
 Button.defaultProps = {
-  buttonWidth: 40,
+  buttonWidth: 20,
   Box: StyledBox,
   Lines: StyledLines,
 }

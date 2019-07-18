@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { NavLink } from 'react-router-dom';
-import HamburgerSpring from './Hamburger/HamburgerSpring.js'
-import './stylesheet.css';
+import HamburgerSpring from './Hamburger/HamburgerSpring.js';
+import Paper from '@material-ui/core/Paper';
+import Collapse from '@material-ui/core/Collapse';
+import { BrowserView, MobileView } from "react-device-detect";
 
 import { styles } from './Header.styles';
-
 import logo from '../../images/logo.png';
+
 
 const renderBig = () => (
   <div>
@@ -19,16 +21,14 @@ const renderBig = () => (
     </a>
 
     <div style={styles.rightHolder}>
-      <NavLink to="/gallery" style={styles.rightLink} activeStyle={styles.activeLink} hoverStyle={styles.hover} exact>{'GALLERY'}</NavLink>
+      <NavLink to="/gallery" style={styles.rightLink} activeStyle={styles.activeLink} exact>{'GALLERY'}</NavLink>
       <NavLink to="/contact" style={styles.rightLink} activeStyle={styles.activeLink} exact>{'CONTACT'}</NavLink>
     </div>
   </div>
 );
 
 
-
 class Header extends Component {
-
 
   constructor(props) {
     super(props);
@@ -61,12 +61,19 @@ class Header extends Component {
   render() {
     return (
       <div style={styles.header}>
-        {this.state.width < 1000 ?
+        {this.state.width < 1024 ?
           <div>
 
-            <a href="/">
-              <img src={logo} alt={"Ever Pretty Beauty Studio Logo"} style={styles.logoSmall} />
-            </a>
+            <BrowserView>
+              <a href="/">
+                <img src={logo} alt={"Ever Pretty Beauty Studio Logo"} style={styles.logoSmallDesktop} />
+              </a>
+            </BrowserView>
+            <MobileView>
+              <a href="/">
+                <img src={logo} alt={"Ever Pretty Beauty Studio Logo"} style={styles.logoSmallMobile} />
+              </a>
+            </MobileView>
 
             <div style={styles.menuHolder} >
               <div style={styles.menuIcon} >
@@ -79,17 +86,23 @@ class Header extends Component {
               </div>
             </div>
 
+            <Collapse in={this.state.buttonActive} timeout={1000}>
+              <Paper elevation={4}>
+                <div style={styles.dropdownMenu}>
+                  <NavLink to="/treatments" style={styles.dropdownLink} activeStyle={styles.activeLink} exact>{'TREATMENTS'}</NavLink>
+                  <NavLink to="/reviews" style={styles.dropdownLink} activeStyle={styles.activeLink} exact>{'REVIEWS'}</NavLink>
+                  <NavLink to="/gallery" style={styles.dropdownLink} activeStyle={styles.activeLink} exact>{'GALLERY'}</NavLink>
+                  <NavLink to="/contact" style={styles.dropdownLink} activeStyle={styles.activeLink} exact>{'CONTACT'}</NavLink>
+                </div>
+              </Paper>
+            </Collapse>
+
           </div>
           :
           renderBig()
         }
-        {this.state.buttonActive ?
-          <div transitionName="example">
-            { this.state.buttonActive ? <div className='panel' /> : null }
-          </div>
-          :
-          <div />
-        }
+
+
       </div>
     )
   }

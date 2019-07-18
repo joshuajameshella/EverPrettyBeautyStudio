@@ -9,10 +9,10 @@ export const styles = {
   },
 
   slideshow: {
-    position: 'relative',
-    width: '100%',
-    marginTop: '20vh',
-    height: '80vh',
+    position: 'fixed',
+    width: '100vw',
+    top: '15vh',
+    height: '85vh',
     opacity: 0.90,
   },
 };

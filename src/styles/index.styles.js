@@ -6,6 +6,5 @@ export const styles = {
       width : '100vw',
       height: '100vh',
       overflowX: 'hidden',
-      backgroundColor: 'rgb(255, 255, 255)',
-    },
+    }
 };
