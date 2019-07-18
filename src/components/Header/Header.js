@@ -7,7 +7,6 @@ import { styles } from './Header.styles';
 
 import logo from '../../images/logo.png';
 
-
 const renderBig = () => (
   <div>
     <div style={styles.leftHolder}>
@@ -26,12 +25,6 @@ const renderBig = () => (
   </div>
 );
 
-
-const renderMenu = () => (
-  <div id="slide">
-
-  </div>
-);
 
 
 class Header extends Component {
@@ -91,7 +84,9 @@ class Header extends Component {
           renderBig()
         }
         {this.state.buttonActive ?
-          renderMenu()
+          <div transitionName="example">
+            { this.state.buttonActive ? <div className='panel' /> : null }
+          </div>
           :
           <div />
         }

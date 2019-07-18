@@ -1,19 +1,20 @@
-#slide {
-    position: fixed;
-    left: 100px;
-    width: 100px;
-    height: 100px;
-    background: blue;
-    -webkit-animation: slide 5.5s forwards;
-    -webkit-animation-delay: 5s;
-    animation: slide 5.5s forwards;
-    animation-delay: 5s;
+.panel {
+    width: 100vw;
+    height: 80vh;
+    background: green;
+    margin-top: 20vh;
 }
 
-@-webkit-keyframes slide {
-    100% { down: 5s; }
+.example-enter {
+    height: 0px;
 }
 
-@keyframes slide {
-    100% { down: 5s; }
+.example-enter.example-enter-active {
+    /* height: 100px; */
+    -webkit-transition: height 1.3s ease;
+}
+
+.example-leave.example-leave-active {
+    height: 0px;
+    -webkit-transition: height 1.3s ease;
 }
