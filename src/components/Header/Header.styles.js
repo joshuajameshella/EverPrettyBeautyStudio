@@ -96,15 +96,5 @@ export const styles = {
     fontSize: 20,
     fontWeight: 300,
   },
-  dropdownLink: {
-    position: 'relative',
-    textAlign: 'center',
-    width: 200,
-    float: 'left',
-    marginLeft: 'calc((100vw - 200px) / 2)',
-    marginRight: 'calc((100vw - 200px) / 2)',
-    marginTop: '10vh',
-    textDecoration: 'none',
-    color: 'rgb(80, 80, 80)',
-  },
+
 };

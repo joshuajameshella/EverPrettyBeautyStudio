@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Collapse from '@material-ui/core/Collapse';
 import { BrowserView, MobileView } from "react-device-detect";
 
+import './stylesheet.css';
 import { styles } from './Header.styles';
 import logo from '../../images/logo.png';
 
@@ -89,10 +90,10 @@ class Header extends Component {
             <Collapse in={this.state.buttonActive} timeout={1000}>
               <Paper elevation={4}>
                 <div style={styles.dropdownMenu}>
-                  <NavLink to="/treatments" style={styles.dropdownLink} activeStyle={styles.activeLink} exact>{'TREATMENTS'}</NavLink>
-                  <NavLink to="/reviews" style={styles.dropdownLink} activeStyle={styles.activeLink} exact>{'REVIEWS'}</NavLink>
-                  <NavLink to="/gallery" style={styles.dropdownLink} activeStyle={styles.activeLink} exact>{'GALLERY'}</NavLink>
-                  <NavLink to="/contact" style={styles.dropdownLink} activeStyle={styles.activeLink} exact>{'CONTACT'}</NavLink>
+                  <p><NavLink to="/treatments" className="dropdownLink" activeStyle={styles.activeLink} exact>{'TREATMENTS'}</NavLink></p>
+                  <NavLink to="/reviews" className="dropdownLink" activeStyle={styles.activeLink} exact>{'REVIEWS'}</NavLink>
+                  <NavLink to="/gallery" className="dropdownLink" activeStyle={styles.activeLink} exact>{'GALLERY'}</NavLink>
+                  <NavLink to="/contact" className="dropdownLink" activeStyle={styles.activeLink} exact>{'CONTACT'}</NavLink>
                 </div>
               </Paper>
             </Collapse>
