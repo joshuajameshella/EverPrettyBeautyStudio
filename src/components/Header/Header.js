@@ -5,10 +5,14 @@ import Paper from '@material-ui/core/Paper';
 import Collapse from '@material-ui/core/Collapse';
 import { BrowserView, MobileView } from "react-device-detect";
 
+
 import './stylesheet.css';
 import { styles } from './Header.styles';
 import logo from '../../images/logo.png';
 
+
+// <NavLink to="/reviews" style={styles.leftLink} activeStyle={styles.activeLink} exact>{'REVIEWS'}</NavLink>
+// <NavLink to="/treatments" style={styles.leftLink} activeStyle={styles.activeLink} exact>{'TREATMENTS'}</NavLink>
 
 const renderBig = () => (
   <div>
