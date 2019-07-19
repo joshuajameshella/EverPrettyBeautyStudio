@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { BrowserView, MobileView } from "react-device-detect";
 import Slideshow from './Slideshow/Slideshow.js';
-import Motto from '../Motto/Motto.js';
 
+import motto_image from '../../images/motto.png';
 import { styles } from './Slider.styles.js';
 
 const slides = [
@@ -13,13 +13,14 @@ const slides = [
 ];
 
 
+
 class Slider extends Component {
   render() {
     return (
       <div>
         <BrowserView>
           <div style={styles.slideshowWeb}>
-            <Motto />
+            <img src={motto_image} alt={"Ever Pretty Beauty Studio"} style={{ width: '50vw', position: 'absolute', zIndex: 30, left: '25vw', top: '40vh' }} />
             <Slideshow
               showIndex
               showArrows
@@ -36,7 +37,6 @@ class Slider extends Component {
 
         <MobileView>
           <div style={styles.slideshowMobile}>
-            <Motto />
             <Slideshow
               showIndex
               showArrows
