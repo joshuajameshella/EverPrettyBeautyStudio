@@ -8,9 +8,7 @@ class Motto extends Component {
     return (
       <BrowserView>
         <div style={styles.mottoContainer}>
-          <h1 style={styles.motto}>Find your</h1>
-          <h1 style={styles.pop}>unique</h1>
-          <h1 style={styles.motto}>style</h1>
+          <h1 style={styles.welcome}>Welcome to Ever Pretty Beauty and Training Studio</h1>
         </div>
       </BrowserView>
     )

@@ -31,7 +31,19 @@ export const styles = {
     textShadow: '1px 1px rgb(50, 50, 127)',
     zIndex: 11,
     transform: 'rotate(355deg)',
+  },
 
+  // -- v2 motto
+  welcome: {
+    position: 'relative',
+    float: 'left',
+    fontFamily: 'Northwell',
+    color: '#fff',
+    fontSize: '3vw',
+    textShadow: '1px 1px rgb(50, 50, 127)',
+    zIndex: 11,
+    textAlign: 'center',
+    transform: 'rotate(360deg)',
   },
 
 };
