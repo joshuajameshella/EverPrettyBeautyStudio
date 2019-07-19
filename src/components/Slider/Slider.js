@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserView, MobileView } from "react-device-detect";
 import Slideshow from './Slideshow/Slideshow.js';
 import Motto from '../Motto/Motto.js';
 
@@ -15,20 +16,44 @@ const slides = [
 class Slider extends Component {
   render() {
     return (
-      <div style={styles.slideshow}>
-        <Motto />
-      	<Slideshow
-      		showIndex
-      		showArrows
-      		autoplay
-      		defaultIndex={1}
-      		effect={'fade'}
-      		slideInterval={4000}
-      		slides={slides}
-      		height={'100%'}
-      		width={'100%'}>
-      	</Slideshow>
+      <div>
+        <BrowserView>
+          <div style={styles.slideshowWeb}>
+            <Motto />
+            <Slideshow
+              showIndex
+              showArrows
+              autoplay
+              defaultIndex={1}
+              effect={'fade'}
+              slideInterval={4000}
+              slides={slides}
+              height={'100%'}
+              width={'100%'}>
+            </Slideshow>
+          </div>
+        </BrowserView>
+
+        <MobileView>
+          <div style={styles.slideshowMobile}>
+            <Motto />
+            <Slideshow
+              showIndex
+              showArrows
+              autoplay
+              defaultIndex={1}
+              effect={'fade'}
+              slideInterval={4000}
+              slides={slides}
+              height={'100%'}
+              width={'100%'}>
+            </Slideshow>
+          </div>
+        </MobileView>
       </div>
+
+
+
     )
   }
 }

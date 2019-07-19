@@ -60,6 +60,11 @@ class Header extends Component {
       buttonActive: !this.state.buttonActive
     })
   }
+  closeMenu = () => {
+    this.setState({
+      buttonActive: false
+    })
+  }
 
   render() {
     return (
@@ -68,12 +73,12 @@ class Header extends Component {
           <div>
 
             <BrowserView>
-              <Scrollchor to="/">
+              <Scrollchor to="/" beforeAnimate={this.closeMenu}>
                 <img src={logo} alt={"Ever Pretty Beauty Studio Logo"} style={styles.logoSmallDesktop} />
               </Scrollchor>
             </BrowserView>
             <MobileView>
-              <Scrollchor to="/">
+              <Scrollchor to="/" beforeAnimate={this.closeMenu}>
                 <img src={logo} alt={"Ever Pretty Beauty Studio Logo"} style={styles.logoSmallMobile} />
               </Scrollchor>
             </MobileView>
