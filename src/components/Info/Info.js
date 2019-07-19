@@ -103,10 +103,10 @@ class Info extends Component {
                   <li>  Eyelash Tinting and Eyebrow Tinting</li>
                 </div>
 
-                <div style={{ position: 'relative', float: 'left', width: '35vw', margin: '5vw', paddingTop: '3vh' }}>
+                <div style={{ position: 'relative', float: 'left', width: '35vw', margin: '5vw', paddingTop: '3vh', marginBottom: '5vh' }}>
                   <Button input={'VIEW ALL TREATMENTS'}/>
                 </div>
-                <div style={{ position: 'relative', float: 'left', width: '35vw', margin: '5vw', paddingTop: '3vh' }}>
+                <div style={{ position: 'relative', float: 'left', width: '35vw', margin: '5vw', paddingTop: '3vh', marginBottom: '5vh' }}>
                   <Button input={'BOOK AN APPOINTMENT'}/>
                 </div>
 
