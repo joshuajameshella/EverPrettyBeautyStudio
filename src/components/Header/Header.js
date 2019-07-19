@@ -1,24 +1,22 @@
 import React, { Component } from "react";
-import { NavLink } from 'react-router-dom';
 import HamburgerSpring from './Hamburger/HamburgerSpring.js';
 import Paper from '@material-ui/core/Paper';
 import Collapse from '@material-ui/core/Collapse';
 import { BrowserView, MobileView } from "react-device-detect";
 
+import Scrollchor from 'react-scrollchor';
 
 import './stylesheet.css';
 import { styles } from './Header.styles';
 import logo from '../../images/logo.png';
 
 
-// <NavLink to="/reviews" style={styles.leftLink} activeStyle={styles.activeLink} exact>{'REVIEWS'}</NavLink>
-// <NavLink to="/treatments" style={styles.leftLink} activeStyle={styles.activeLink} exact>{'TREATMENTS'}</NavLink>
 
 const renderBig = () => (
   <div>
     <nav style={styles.leftHolder}>
-      <NavLink to="/reviews" style={styles.leftLink} activeStyle={styles.activeLink} exact>{'REVIEWS'}</NavLink>
-      <NavLink to="/treatments" style={styles.leftLink} activeStyle={styles.activeLink} exact>{'TREATMENTS'}</NavLink>
+      <Scrollchor style={styles.leftLink} to="#reviews" >REVIEWS</Scrollchor>
+      <Scrollchor style={styles.leftLink} to="#treatments" >TREATMENTS</Scrollchor>
     </nav>
 
     <a href="/">
@@ -26,8 +24,8 @@ const renderBig = () => (
     </a>
 
     <nav style={styles.rightHolder}>
-      <NavLink to="/gallery" style={styles.rightLink} activeStyle={styles.activeLink} exact>{'GALLERY'}</NavLink>
-      <NavLink to="/contact" style={styles.rightLink} activeStyle={styles.activeLink} exact>{'CONTACT'}</NavLink>
+      <Scrollchor style={styles.rightLink} to="#gallery" >GALLERY</Scrollchor>
+      <Scrollchor style={styles.rightLink} to="#contact" >CONTACT</Scrollchor>
     </nav>
   </div>
 );
@@ -94,10 +92,10 @@ class Header extends Component {
             <Collapse in={this.state.buttonActive} timeout={1000}>
               <Paper elevation={4}>
                 <nav style={styles.dropdownMenu}>
-                  <NavLink to="/treatments" className="dropdownLink" activeStyle={styles.activeLink} exact>{'TREATMENTS'}</NavLink>
-                  <NavLink to="/reviews" className="dropdownLink" activeStyle={styles.activeLink} exact>{'REVIEWS'}</NavLink>
-                  <NavLink to="/gallery" className="dropdownLink" activeStyle={styles.activeLink} exact>{'GALLERY'}</NavLink>
-                  <NavLink to="/contact" className="dropdownLink" activeStyle={styles.activeLink} exact>{'CONTACT'}</NavLink>
+                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} to="#treatments" >TREATMENTS</Scrollchor>
+                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} to="#reviews" >REVIEWS</Scrollchor>
+                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} to="#gallery" >GALLERY</Scrollchor>
+                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} to="#contact" >CONTACT</Scrollchor>
                 </nav>
               </Paper>
             </Collapse>

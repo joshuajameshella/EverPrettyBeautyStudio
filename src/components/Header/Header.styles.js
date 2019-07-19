@@ -97,5 +97,16 @@ export const styles = {
     fontWeight: 300,
     zIndex: 30,
   },
+  menuLink: {
+    position: 'relative',
+    float: 'left',
+    width: 150,
+    marginLeft: 'calc((100vw - 150px) / 2)',
+    marginRight: 'calc((100vw - 150px) / 2)',
+    marginTop: '10%',
+    textDecoration: 'none',
+    textAlign: 'center',
+    color: 'rgb(80, 80, 80)',
+  },
 
 };
