@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Parallax } from 'react-scroll-parallax';
 
+import { header, body_1, body_2 } from './text.js';
 import { styles } from './Info.styles';
 
 import image_1 from '../../images/info_2.png';
@@ -28,6 +29,22 @@ class Info extends Component {
             <img src={image_2} alt="nails" style={styles.slidingImageRight} />
           </Parallax>
 
+        </div>
+
+        <div style={styles.textHolder}>
+          <div style={styles.infoHeader}>{header}</div>
+          <div style={styles.infoText}>{body_1}</div>
+          <div style={styles.infoText}>{body_2}</div>
+
+          <div style={styles.infoTextTitle}>Our beauty treatments include:</div>
+          <div style={styles.infoText}>
+            <li>  The Gel Bottle Inc, Gel Polish Nails</li>
+            <li>  The Gel Bottle Inc, Gel Nail Extensions</li>
+            <li>  Footlogix Pedicure</li>
+            <li>  Brazillian and Hollywood Female Intimate Waxing</li>
+            <li>  All other Waxing treatments</li>
+            <li>  Eyelash Tinting and Eyebrow Tinting</li>
+          </div>
         </div>
 
       </div>
