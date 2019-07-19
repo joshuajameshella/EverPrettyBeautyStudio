@@ -19,9 +19,9 @@ const renderBig = () => (
       <Scrollchor style={styles.leftLink} to="#treatments" >TREATMENTS</Scrollchor>
     </nav>
 
-    <a href="/">
+    <Scrollchor to="/">
       <img src={logo} alt={"Ever Pretty Beauty Studio Logo"} style={styles.logoBig} />
-    </a>
+    </Scrollchor>
 
     <nav style={styles.rightHolder}>
       <Scrollchor style={styles.rightLink} to="#gallery" >GALLERY</Scrollchor>
@@ -68,14 +68,14 @@ class Header extends Component {
           <div>
 
             <BrowserView>
-              <a href="/">
+              <Scrollchor to="/">
                 <img src={logo} alt={"Ever Pretty Beauty Studio Logo"} style={styles.logoSmallDesktop} />
-              </a>
+              </Scrollchor>
             </BrowserView>
             <MobileView>
-              <a href="/">
+              <Scrollchor to="/">
                 <img src={logo} alt={"Ever Pretty Beauty Studio Logo"} style={styles.logoSmallMobile} />
-              </a>
+              </Scrollchor>
             </MobileView>
 
             <div style={styles.menuHolder} >

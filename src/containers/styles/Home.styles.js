@@ -8,4 +8,11 @@ export const styles = {
     backgroundColor: 'rgb(255, 255, 255)',
   },
 
+  treatmentContainer: {
+    position: 'relative',
+    float: 'left',
+    width: '100vw',
+    height: '85vh',
+    backgroundColor: '#c1c9d0',
+  },
 };

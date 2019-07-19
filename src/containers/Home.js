@@ -13,13 +13,13 @@ class Home extends Component {
 
       <div style={styles.main}>
 
-          <div id="reviews">
+          <div id="/">
             <Header />
           </div>
 
           <Slideshow />
 
-          <div id="treatments" style={{ width: '100vw', height: 1000 }} />
+          <div id="treatments" style={styles.treatmentContainer} />
 
       </div>
 
