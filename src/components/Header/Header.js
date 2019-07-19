@@ -15,8 +15,8 @@ import logo from '../../images/logo.png';
 const renderBig = () => (
   <div>
     <nav style={styles.leftHolder}>
-      <Scrollchor style={styles.leftLink} to="#reviews" >REVIEWS</Scrollchor>
-      <Scrollchor style={styles.leftLink} to="#treatments" >TREATMENTS</Scrollchor>
+      <Scrollchor style={styles.leftLink} animate={{ offset: -140 }} to="#reviews" >REVIEWS</Scrollchor>
+      <Scrollchor style={styles.leftLink} animate={{ offset: -140 }} to="#treatments" >TREATMENTS</Scrollchor>
     </nav>
 
     <Scrollchor to="/">
@@ -24,8 +24,8 @@ const renderBig = () => (
     </Scrollchor>
 
     <nav style={styles.rightHolder}>
-      <Scrollchor style={styles.rightLink} to="#gallery" >GALLERY</Scrollchor>
-      <Scrollchor style={styles.rightLink} to="#contact" >CONTACT</Scrollchor>
+      <Scrollchor style={styles.rightLink} animate={{ offset: -140 }} to="#gallery" >GALLERY</Scrollchor>
+      <Scrollchor style={styles.rightLink} animate={{ offset: -140 }} to="#contact" >CONTACT</Scrollchor>
     </nav>
   </div>
 );
@@ -97,10 +97,10 @@ class Header extends Component {
             <Collapse in={this.state.buttonActive} timeout={1000}>
               <Paper elevation={4}>
                 <nav style={styles.dropdownMenu}>
-                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} to="#treatments" >TREATMENTS</Scrollchor>
-                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} to="#reviews" >REVIEWS</Scrollchor>
-                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} to="#gallery" >GALLERY</Scrollchor>
-                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} to="#contact" >CONTACT</Scrollchor>
+                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} animate={{ offset: -140 }} to="#treatments" >TREATMENTS</Scrollchor>
+                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} animate={{ offset: -140 }} to="#reviews" >REVIEWS</Scrollchor>
+                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} animate={{ offset: -140 }} to="#gallery" >GALLERY</Scrollchor>
+                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} animate={{ offset: -140 }} to="#contact" >CONTACT</Scrollchor>
                 </nav>
               </Paper>
             </Collapse>

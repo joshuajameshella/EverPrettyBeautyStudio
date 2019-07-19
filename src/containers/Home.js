@@ -14,16 +14,30 @@ class Home extends Component {
 
       <div style={styles.main}>
 
-          <div id="/">
-            <Header />
-          </div>
+        <div id="/">
+          <Header />
+        </div>
 
-          <Slideshow />
+        <Slideshow />
 
-          <Info />
+        <Info />
 
 
-          <div id="treatments" style={styles.treatmentContainer} />
+        <div id="treatments" style={styles.treatmentContainer}>
+          TREATMENT SECTION GOES HERE
+        </div>
+
+        <div id="reviews" style={styles.reviewsContainer}>
+          REVIEWS SECTION GOES HERE
+        </div>
+
+        <div id="gallery" style={styles.galleryContainer}>
+          GALLERY SECTION GOES HERE
+        </div>
+
+        <div id="contact" style={styles.contactContainer}>
+          CONTACT SECTION GOES HERE
+        </div>
 
       </div>
 

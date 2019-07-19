@@ -71,7 +71,7 @@ class Info extends Component {
 
                 {this.state.width < 940 ? "" :
                   <div>
-                    <div style={{ position: 'relative', float: 'left', width: '15vw', marginTop: '5vh', marginRight: '5vw', marginBottom: '5vh' }}>
+                    <div style={{ position: 'relative', float: 'left', width: '15vw', marginTop: '5vh', marginBottom: '5vh' }}>
                       <Button input={'VIEW ALL TREATMENTS'}/>
                     </div>
                     <div style={{ position: 'relative', float: 'left', width: '15vw', marginTop: '5vh', marginBottom: '5vh' }}>

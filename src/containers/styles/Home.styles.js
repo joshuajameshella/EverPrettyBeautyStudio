@@ -4,7 +4,7 @@ export const styles = {
     top: 0,
     left: 0,
     width: '100vw',
-    height: '100vh',
+    maxWidth: '100%',
     backgroundColor: 'rgb(255, 255, 255)',
   },
 
@@ -14,5 +14,41 @@ export const styles = {
     width: '100vw',
     height: '85vh',
     backgroundColor: '#c1c9d0',
+
+    color: 'rgb(82, 82, 82)',
+    fontFamily: 'Muli, sans-serif',
+  },
+
+  reviewsContainer: {
+    position: 'relative',
+    float: 'left',
+    width: '100vw',
+    height: '85vh',
+    backgroundColor: '#e5dede',
+
+    color: 'rgb(82, 82, 82)',
+    fontFamily: 'Muli, sans-serif',
+  },
+
+  galleryContainer: {
+    position: 'relative',
+    float: 'left',
+    width: '100vw',
+    height: '85vh',
+    backgroundColor: '#8c9a65',
+
+    color: 'rgb(82, 82, 82)',
+    fontFamily: 'Muli, sans-serif',
+  },
+
+  contactContainer: {
+    position: 'relative',
+    float: 'left',
+    width: '100vw',
+    height: '85vh',
+    backgroundColor: '#e4d9d9',
+
+    color: 'rgb(82, 82, 82)',
+    fontFamily: 'Muli, sans-serif',
   },
 };

@@ -4,14 +4,14 @@ export const styles = {
     top: 0,
     left: 0,
     width: '100vw',
-    height: '15vh',
+    height: 140,
     backgroundColor: 'rgba(255, 255, 255, 1)',
     zIndex: 15,
     fontFamily: 'Muli, sans-serif',
   },
   logoBig: {
-    height: '13vh',
-    marginTop: '2vh',
+    height: 140,
+    marginTop: 20,
     display: 'block',
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -20,9 +20,9 @@ export const styles = {
   },
   logoSmallDesktop: {
     position: 'absolute',
-    height: '10vh',
+    height: 100,
     minWidth: 300,
-    paddingTop: 'calc((15vh - 77px) / 1.5)',
+    paddingTop: 18,
     paddingLeft: '5vw'
   },
   logoSmallMobile: {
