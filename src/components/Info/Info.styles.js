@@ -66,8 +66,8 @@ export const styles = {
   slidingImageRight: {
     width: '15vw',
     minWidth: 250,
-    marginLeft: '20vw',
-    marginTop: '45vh',
+    marginLeft: '17vw',
+    marginTop: '40vh',
     position: 'absolute',
   },
   stationaryImage: {

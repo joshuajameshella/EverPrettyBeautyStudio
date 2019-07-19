@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Parallax } from 'react-scroll-parallax';
+import Button from '../Button';
 
 import { header, body_1, body_2 } from './text.js';
 import { styles } from './Info.styles';
@@ -44,6 +45,13 @@ class Info extends Component {
             <li>  Brazillian and Hollywood Female Intimate Waxing</li>
             <li>  All other Waxing treatments</li>
             <li>  Eyelash Tinting and Eyebrow Tinting</li>
+          </div>
+
+          <div style={{ position: 'relative', float: 'left', width: '15vw', marginTop: '7vh' }}>
+            <Button input={'VIEW ALL TREATMENTS'}/>
+          </div>
+          <div style={{ position: 'relative', float: 'left', width: '15vw', marginTop: '7vh' }}>
+            <Button input={'BOOK AN APPOINTMENT'}/>
           </div>
         </div>
 
