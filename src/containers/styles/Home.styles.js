@@ -24,7 +24,7 @@ export const styles = {
     float: 'left',
     width: '100vw',
     height: '85vh',
-    backgroundColor: '#e5dede',
+    backgroundColor: 'rgba(222, 191, 191, 0.6)',
 
     color: 'rgb(82, 82, 82)',
     fontFamily: 'Muli, sans-serif',

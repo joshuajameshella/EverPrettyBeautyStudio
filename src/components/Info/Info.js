@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Parallax } from 'react-scroll-parallax';
 import { BrowserView, MobileView } from "react-device-detect";
 import Button from '../Button';
+import Scrollchor from 'react-scrollchor';
+
 
 import { header, body_1, body_2 } from './text.js';
 import { styles } from './Info.styles';
@@ -72,10 +74,14 @@ class Info extends Component {
                 {this.state.width < 940 ? "" :
                   <div>
                     <div style={{ position: 'relative', float: 'left', width: '15vw', marginTop: '5vh', marginBottom: '5vh' }}>
-                      <Button input={'VIEW ALL TREATMENTS'}/>
+                      <Scrollchor style={{ 'textDecoration': 'none' }} animate={{ offset: -140 }} to="#treatments" >
+                        <Button input={'VIEW ALL TREATMENTS'}/>
+                      </Scrollchor>
                     </div>
                     <div style={{ position: 'relative', float: 'left', width: '15vw', marginTop: '5vh', marginBottom: '5vh' }}>
-                      <Button input={'BOOK AN APPOINTMENT'}/>
+                      <Scrollchor style={{ 'textDecoration': 'none' }} animate={{ offset: -140 }} to="#contact" >
+                        <Button input={'BOOK AN APPOINTMENT'}/>
+                      </Scrollchor>
                     </div>
                   </div>
                 }
@@ -103,13 +109,17 @@ class Info extends Component {
                   <li>  Eyelash Tinting and Eyebrow Tinting</li>
                 </div>
 
-                <div style={{ position: 'relative', float: 'left', width: '35vw', margin: '5vw', paddingTop: '3vh', marginBottom: '5vh' }}>
-                  <Button input={'VIEW ALL TREATMENTS'}/>
-                </div>
-                <div style={{ position: 'relative', float: 'left', width: '35vw', margin: '5vw', paddingTop: '3vh', marginBottom: '5vh' }}>
-                  <Button input={'BOOK AN APPOINTMENT'}/>
-                </div>
 
+                <div style={{ position: 'relative', float: 'left', width: '35vw', margin: '5vw', paddingTop: '3vh', marginBottom: '5vh' }}>
+                  <Scrollchor style={{ 'textDecoration': 'none' }} animate={{ offset: -140 }} to="#treatments" >
+                    <Button input={'VIEW ALL TREATMENTS'}/>
+                  </Scrollchor>
+               </div>
+                <div style={{ position: 'relative', float: 'left', width: '35vw', margin: '5vw', paddingTop: '3vh', marginBottom: '5vh' }}>
+                  <Scrollchor style={{ 'textDecoration': 'none' }} animate={{ offset: -140 }} to="#contact" >
+                    <Button input={'BOOK AN APPOINTMENT'}/>
+                  </Scrollchor>
+                </div>
               </div>
             </div>
           </MobileView>

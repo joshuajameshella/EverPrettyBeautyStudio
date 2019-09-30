@@ -4,7 +4,7 @@ export const mobilestyles = {
     position: 'relative',
     float: 'left',
     width: '100vw',
-    backgroundColor: '#e5dede',
+    backgroundColor: 'rgba(222, 191, 191, 0.6)',
   },
 
   image: {

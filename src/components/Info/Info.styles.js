@@ -5,7 +5,7 @@ export const styles = {
     float: 'left',
     width: '100vw',
     height: '85vh',
-    backgroundColor: '#e5dede',
+    backgroundColor: 'rgba(222, 191, 191, 0.6)',
   },
 
   infoHeader: {
