@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
 
 const styles = {
@@ -24,23 +25,23 @@ class SwipableMenu extends Component {
       <div style={{  }}>
         <SwipeableViews enableMouseEvents>
           <div style={Object.assign({}, styles.slide, styles.slide1)}>
-            <img style={{ width: '100%' }} src={require("../images/treatments/cover.png")} alt={"cover page"}/>
+            <img style={this.props.style} src={require("../../images/treatments/cover.png")} alt={"cover page"}/>
           </div>
 
           <div style={Object.assign({}, styles.slide, styles.slide1)}>
-            <img style={{ width: '100%' }} src={require("../images/treatments/page1.png")} alt={"page 1 of treatments"}/>
+            <img style={this.props.style} src={require("../../images/treatments/page1.png")} alt={"page 1 of treatments"}/>
           </div>
 
           <div style={Object.assign({}, styles.slide, styles.slide1)}>
-            <img style={{ width: '100%' }} src={require("../images/treatments/page1.png")} alt={"page two of treatments"}/>
+            <img style={this.props.style} src={require("../../images/treatments/page1.png")} alt={"page two of treatments"}/>
           </div>
 
           <div style={Object.assign({}, styles.slide, styles.slide2)}>
-            <img style={{ width: '100%' }} src={require("../images/treatments/page2.png")} alt={"page three of treatments"}/>
+            <img style={this.props.style} src={require("../../images/treatments/page2.png")} alt={"page three of treatments"}/>
           </div>
 
           <div style={Object.assign({}, styles.slide, styles.slide3)}>
-            <img style={{ width: '100%' }} src={require("../images/treatments/page4.png")} alt={"page four of treatments"}/>
+            <img style={this.props.style} src={require("../../images/treatments/page4.png")} alt={"page four of treatments"}/>
           </div>
         </SwipeableViews>
       </div>
@@ -49,3 +50,7 @@ class SwipableMenu extends Component {
 }
 
 export default SwipableMenu;
+
+SwipableMenu.propTypes = {
+  style: PropTypes.object
+};

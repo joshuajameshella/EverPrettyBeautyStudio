@@ -9,8 +9,8 @@ export const styles = {
   },
   treatmentsHolder: {
     width: '80vw',
-    height: '60vh',
-    marginTop: '10vh',
+    height: '75vh',
+    marginTop: '5vh',
     marginLeft: '10vw',
     backgroundColor: 'rgb(255, 255, 255)',
   }

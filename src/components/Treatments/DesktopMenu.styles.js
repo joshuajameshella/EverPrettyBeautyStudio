@@ -1,0 +1,67 @@
+export const styles = {
+  main: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+  },
+  container: {
+    position: 'relative',
+    float: 'left',
+    width: 'calc((70vw / 3))',
+    marginLeft: 20,
+    marginRight: 20,
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  title: {
+    position: 'relative',
+    float: 'left',
+    width: '100%',
+    fontSize: 18,
+    marginLeft: 5,
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  subTitleMain: {
+    position: 'relative',
+    float: 'left',
+    width: 'calc(100% - 10px)',
+    marginBottom: 5,
+    marginLeft: 3,
+    marginRight: 5,
+    fontSize: 9,
+    color: '#d65e5b',
+  },
+  subTitle: {
+    position: 'relative',
+    float: 'left',
+    width: 'calc(80% - 10px)',
+    marginBottom: 5,
+    marginLeft: 3,
+    marginRight: 5,
+    fontSize: 8,
+    color: '#d65e5b',
+  },
+  itemName: {
+    position: 'relative',
+    float: 'left',
+    width: 'calc(55% - 10px)',
+    fontSize: 11,
+    marginTop: 6,
+    marginLeft: 5,
+    marginRight: 5,
+  },
+  itemPrice: {
+    position: 'relative',
+    float: 'right',
+    textAlign: 'right',
+    width: 'calc(35% - 10px)',
+    fontSize: 11,
+    marginTop: 6,
+    marginLeft: 5,
+    marginRight: 5,
+    color: '#d65e5b',
+  }
+
+
+};

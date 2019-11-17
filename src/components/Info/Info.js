@@ -38,7 +38,9 @@ class Info extends Component {
           <BrowserView>
             <div style={styles.imageContainer}>
               <img style={styles.iconOne} src={require("../../images/about/flower1.png")} alt={"flower one"}></img>
-              <img style={styles.iconTwo} src={require("../../images/about/flower2.png")} alt={"flower two"}></img>
+              {this.state.width < 1150 ? "" :
+                <img style={styles.iconTwo} src={require("../../images/about/flower2.png")} alt={"flower two"}></img>
+              }
             </div>
             <div style={styles.webInfo}>
               <div style={styles.webHeader}>About Us</div>
