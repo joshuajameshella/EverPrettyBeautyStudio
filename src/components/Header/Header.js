@@ -15,8 +15,8 @@ import logo from '../../images/logo.png';
 const renderBig = () => (
   <div>
     <nav style={styles.leftHolder}>
-      <Scrollchor style={styles.leftLink} animate={{ offset: -140 }} to="#reviews" >REVIEWS</Scrollchor>
       <Scrollchor style={styles.leftLink} animate={{ offset: -140 }} to="#treatments" >TREATMENTS</Scrollchor>
+      <Scrollchor style={styles.leftLink} animate={{ offset: -140 }} to="#about" >ABOUT</Scrollchor>
     </nav>
 
     <Scrollchor to="/">
@@ -97,8 +97,8 @@ class Header extends Component {
             <Collapse in={this.state.buttonActive} timeout={1000}>
               <Paper elevation={4}>
                 <nav style={styles.dropdownMenu}>
+                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} animate={{ offset: -140 }} to="#about" >ABOUT</Scrollchor>
                   <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} animate={{ offset: -140 }} to="#treatments" >TREATMENTS</Scrollchor>
-                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} animate={{ offset: -140 }} to="#reviews" >REVIEWS</Scrollchor>
                   <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} animate={{ offset: -140 }} to="#gallery" >GALLERY</Scrollchor>
                   <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} animate={{ offset: -140 }} to="#contact" >CONTACT</Scrollchor>
                 </nav>

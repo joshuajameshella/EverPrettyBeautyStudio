@@ -1,76 +1,51 @@
 import React, { Component } from "react";
 import { BrowserView, MobileView } from "react-device-detect";
-import Maps from '../components/maps';
-
+import MapBox from '../components/Map/MapBox';
 import { styles } from './styles/Contact.styles';
+import ContactTabs from '../components/ContactLayout/ContactTabs';
 
 class Contact extends Component {
-
   render() {
     return (
       <div style={styles.main}>
         <BrowserView>
           <div style={styles.mapContainer}>
-            <Maps />
+            <MapBox />
           </div>
 
           <div style={styles.infoContainer}>
 
             <div style={styles.infoHolder}>
               <div style={styles.text}>Opening Times</div>
-              <div style={styles.dataLeft}>MON</div><div style={styles.dataRight}>09:30 to 17:00</div>
-              <div style={styles.dataLeft}>TUE</div><div style={styles.dataRight}>09:30 to 17:00</div>
-              <div style={styles.dataLeft}>WED</div><div style={styles.dataRight}>09:30 to 19:00</div>
-              <div style={styles.dataLeft}>THU</div><div style={styles.dataRight}>09:30 to 19:00</div>
-              <div style={styles.dataLeft}>FRI</div><div style={styles.dataRight}>09:30 to 17:00</div>
+              <div style={styles.dataLeft}>MON</div><div style={styles.dataRight}>10:00 to 17:00</div>
+              <div style={styles.dataLeft}>TUE</div><div style={styles.dataRight}>10:00 to 17:00</div>
+              <div style={styles.dataLeft}>WED</div><div style={styles.dataRight}>10:00 to Late</div>
+              <div style={styles.dataLeft}>THU</div><div style={styles.dataRight}>10:00 to 17:00</div>
+              <div style={styles.dataLeft}>FRI</div><div style={styles.dataRight}>10:00 to 17:00</div>
+              <div style={styles.dataLeft}>SAT</div><div style={styles.dataRight}>Please call for availability</div>
+              <div style={styles.dataLeft}>SUN</div><div style={styles.dataRight}>Closed</div>
             </div>
 
             <div style={styles.infoHolder}>
               <div style={styles.text}>Contact</div>
-              <div style={styles.data}>01924 363523</div>
-              <div style={styles.data}>beautytherapybyshelby@gmail.com</div>
+              <div style={styles.data}>01132 887219</div>
+              <div style={styles.data}>hello@everprettybeautystudio.co.uk</div>
             </div>
 
             <div style={styles.infoHolder}>
               <div style={styles.text}>Address</div>
-              <div style={styles.data}>21 Eton Walk</div>
-              <div style={styles.data}>Wrenthorpe</div>
-              <div style={styles.data}>Wakefield</div>
-              <div style={styles.data}>WF1 2FH</div>
+              <div style={styles.data}>Iveridge Hall</div>
+              <div style={styles.data}>Wakefield Road</div>
+              <div style={styles.data}>Oulton</div>
+              <div style={styles.data}>Leeds</div>
+              <div style={styles.data}>LS26 8EU</div>
             </div>
 
           </div>
         </BrowserView>
 
         <MobileView>
-          <div style={styles.infoContainerMobile}>
-            <h1 style={styles.mobileTitle}>Contact Us</h1>
-            <div style={styles.subTitleMobile}>Simply call if you wish to book an appointment or speak to us.</div>
-
-            <div style={styles.infoHolderMobile}>
-              <div style={styles.text}>Opening Times</div>
-              <div style={styles.dataLeft}>MON</div><div style={styles.dataRight}>09:30 to 17:00</div>
-              <div style={styles.dataLeft}>TUE</div><div style={styles.dataRight}>09:30 to 17:00</div>
-              <div style={styles.dataLeft}>WED</div><div style={styles.dataRight}>09:30 to 19:00</div>
-              <div style={styles.dataLeft}>THU</div><div style={styles.dataRight}>09:30 to 19:00</div>
-              <div style={styles.dataLeft}>FRI</div><div style={styles.dataRight}>09:30 to 17:00</div>
-            </div>
-
-            <div style={styles.infoHolderMobile}>
-              <div style={styles.text}>Contact</div>
-              <div style={styles.data}>01924 363523</div>
-              <div style={styles.data}>beautytherapybyshelby@gmail.com</div>
-            </div>
-
-            <div style={styles.infoHolderMobile}>
-              <div style={styles.text}>Address</div>
-              <div style={styles.data}>21 Eton Walk</div>
-              <div style={styles.data}>Wrenthorpe</div>
-              <div style={styles.data}>Wakefield</div>
-              <div style={styles.data}>WF1 2FH</div>
-            </div>
-
-          </div>
+          <ContactTabs />
         </MobileView>
 
       </div>

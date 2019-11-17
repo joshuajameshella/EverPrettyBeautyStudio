@@ -1,17 +1,10 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 import { BrowserView, MobileView } from "react-device-detect";
 import Slideshow from './Slideshow/Slideshow.js';
 
 import motto_image from '../../images/motto.png';
 import { styles } from './Slider.styles.js';
-
-const slides = [
-  require('../../images/1.png'),
-  require('../../images/3.jpeg'),
-  require('../../images/4.jpeg'),
-  require('../../images/5.jpeg'),
-];
-
 
 
 class Slider extends Component {
@@ -19,8 +12,11 @@ class Slider extends Component {
     return (
       <div>
         <BrowserView>
-          <div style={styles.slideshowWeb}>
-            <img src={motto_image} alt={"Ever Pretty Beauty Studio"} style={{ width: '50vw', position: 'absolute', zIndex: 30, left: '25vw', top: '40vh' }} />
+          <div style={this.props.style}>
+            {this.props.motto ?
+              <img src={motto_image} alt={"Ever Pretty Beauty Studio"} style={{ width: '50vw', position: 'absolute', zIndex: 30, left: '25vw', top: '40vh' }} />
+              : ""
+            }
             <Slideshow
               showIndex
               showArrows
@@ -28,9 +24,9 @@ class Slider extends Component {
               defaultIndex={1}
               effect={'fade'}
               slideInterval={4000}
-              slides={slides}
-              height={'100%'}
-              width={'100%'}>
+              slides={this.props.images}
+              height={this.props.height}
+              width={this.props.width}>
             </Slideshow>
           </div>
         </BrowserView>
@@ -44,7 +40,7 @@ class Slider extends Component {
               defaultIndex={1}
               effect={'fade'}
               slideInterval={4000}
-              slides={slides}
+              slides={this.props.images}
               height={'100%'}
               width={'100%'}>
             </Slideshow>
@@ -52,10 +48,16 @@ class Slider extends Component {
         </MobileView>
       </div>
 
-
-
     )
   }
 }
 
 export default Slider;
+
+Slider.propTypes = {
+  images: PropTypes.array,
+  width: PropTypes.string,
+  height: PropTypes.string,
+  motto: PropTypes.bool,
+  style: PropTypes.object
+};

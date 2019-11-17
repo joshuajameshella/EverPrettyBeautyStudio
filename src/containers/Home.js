@@ -5,13 +5,25 @@ import Header from '../components/Header/Header.js';
 import Info from '../components/Info/Info.js';
 
 import Treatments from './Treatments.js';
-import Reviews from './Reviews.js';
 import Contact from './Contact.js';
 import Gallery from './Gallery.js';
 
 import { styles } from './styles/Home.styles';
 
+const slides = [
+  require('../images/1.png'),
+  require('../images/3.jpeg'),
+  require('../images/4.jpeg'),
+  require('../images/5.jpeg'),
+];
 
+const slideshowWeb = {
+  position: 'relative',
+  width: '100vw',
+  marginTop: 140,
+  height: '85vh',
+  opacity: 0.90,
+};
 
 class Home extends Component {
   render() {
@@ -23,16 +35,14 @@ class Home extends Component {
           <Header />
         </div>
 
-        <Slideshow />
+        <Slideshow images={slides} motto={true} height={'100%'} width={'100%'} style={slideshowWeb} />
 
-        <Info />
+        <div id="about" style={styles.aboutContainer}>
+          <Info />
+        </div>
 
         <div id="treatments" style={styles.treatmentContainer}>
           <Treatments />
-        </div>
-
-        <div id="reviews" style={styles.reviewsContainer}>
-          <Reviews />
         </div>
 
         <div id="gallery" style={styles.galleryContainer}>

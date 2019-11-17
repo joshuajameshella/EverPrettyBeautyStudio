@@ -8,6 +8,17 @@ export const styles = {
     backgroundColor: 'rgb(255, 255, 255)',
   },
 
+  aboutContainer: {
+    position: 'relative',
+    float: 'left',
+    width: '100vw',
+    height: '85vh',
+    backgroundColor: '#ffffff',
+
+    color: 'rgb(52, 52, 52)',
+    fontFamily: 'Muli, sans-serif',
+  },
+
   treatmentContainer: {
     position: 'relative',
     float: 'left',
@@ -35,7 +46,7 @@ export const styles = {
     float: 'left',
     width: '100vw',
     height: '85vh',
-    backgroundColor: '#8c9a65',
+    backgroundColor: 'rgba(222, 191, 191, 0.6)',
 
     color: 'rgb(82, 82, 82)',
     fontFamily: 'Muli, sans-serif',
@@ -46,7 +57,7 @@ export const styles = {
     float: 'left',
     width: '100vw',
     height: '85vh',
-    backgroundColor: '#e4d9d9',
+    // backgroundColor: '#e4d9d9',
 
     color: 'rgb(82, 82, 82)',
     fontFamily: 'Muli, sans-serif',

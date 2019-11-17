@@ -1,17 +1,11 @@
 import React, { Component } from "react";
-import { Parallax } from 'react-scroll-parallax';
 import { BrowserView, MobileView } from "react-device-detect";
-import Button from '../Button';
-import Scrollchor from 'react-scrollchor';
 
-
-import { header, body_1, body_2 } from './text.js';
+import { body_1, body_2 } from './text.js';
 import { styles } from './Info.styles';
 import { mobilestyles } from './Info.mobilestyles';
 
-import image_1 from '../../images/info_2.png';
-import image_2 from '../../images/info_3.png';
-import merge from '../../images/merge.png';
+
 
 
 class Info extends Component {
@@ -42,85 +36,40 @@ class Info extends Component {
     return (
       <div>
           <BrowserView>
+            <div style={styles.imageContainer}>
+              <img style={styles.iconOne} src={require("../../images/about/flower1.png")} alt={"flower one"}></img>
+              <img style={styles.iconTwo} src={require("../../images/about/flower2.png")} alt={"flower two"}></img>
+            </div>
             <div style={styles.webInfo}>
+              <div style={styles.webHeader}>About Us</div>
 
-              <div style={styles.paralax}>
-                <img src={merge} alt="" style={styles.stationaryImage} />
-                <Parallax x={['-15%', '5%']} tagOuter="figure">
-                  <img src={image_1} alt="nails" style={styles.slidingImageLeft} />
-                </Parallax>
-                {this.state.width < 940 ? "" :
-                  <Parallax x={['5%', '0%']} tagOuter="figure">
-                    <img src={image_2} alt="nails" style={styles.slidingImageRight} />
-                  </Parallax>
-                }
-              </div>
+              <div style={styles.webText}>{body_1}</div>
 
-              <div style={styles.textHolder}>
-                <div style={styles.infoHeader}>{header}</div>
-                <div style={styles.infoText}>{body_1}</div>
-                <div style={styles.infoText}>{body_2}</div>
+              <div style={styles.webList}>Gel manicure using The Gel Bottle Inc system</div>
+              <div style={styles.webList}>Footlogix pedicure system</div>
+              <div style={styles.webList}>Spray Tans using Nouvatan products</div>
+              <div style={styles.webList}>Manicure treatments</div>
+              <div style={styles.webList}>Pedicure treatments</div>
+              <div style={styles.webList}>We also specialise in Hollywood and Brazillian female intimate waxing</div>
 
-                <div style={styles.infoTextTitle}>Our beauty treatments include:</div>
-                <div style={styles.infoText}>
-                  <li>  The Gel Bottle Inc, Gel Polish Nails</li>
-                  <li>  The Gel Bottle Inc, Gel Nail Extensions</li>
-                  <li>  Footlogix Pedicure</li>
-                  <li>  Brazillian and Hollywood Female Intimate Waxing</li>
-                  <li>  All other Waxing treatments</li>
-                  <li>  Eyelash Tinting and Eyebrow Tinting</li>
-                </div>
-
-                {this.state.width < 940 ? "" :
-                  <div>
-                    <div style={{ position: 'relative', float: 'left', width: '15vw', marginTop: '5vh', marginBottom: '5vh' }}>
-                      <Scrollchor style={{ 'textDecoration': 'none' }} animate={{ offset: -140 }} to="#treatments" >
-                        <Button input={'VIEW ALL TREATMENTS'}/>
-                      </Scrollchor>
-                    </div>
-                    <div style={{ position: 'relative', float: 'left', width: '15vw', marginTop: '5vh', marginBottom: '5vh' }}>
-                      <Scrollchor style={{ 'textDecoration': 'none' }} animate={{ offset: -140 }} to="#contact" >
-                        <Button input={'BOOK AN APPOINTMENT'}/>
-                      </Scrollchor>
-                    </div>
-                  </div>
-                }
-                </div>
+              <div style={styles.webText}>{body_2}</div>
             </div>
           </BrowserView>
 
           <MobileView>
             <div style={mobilestyles.mobileInfo}>
+              <div style={mobilestyles.mobileHeader}>About Us</div>
 
-              <div style={{ width: '90vw', margin: '5vw' }}>
-                <img src={image_1} alt="nails" style={mobilestyles.image} />
-                <div style={mobilestyles.infoHeader}>{header}</div>
+              <div style={mobilestyles.mobileText}>{body_1}</div>
 
-                <div style={mobilestyles.infoText}>{body_1}</div>
-                <div style={mobilestyles.infoText}>{body_2}</div>
+              <div style={mobilestyles.mobileList}>Gel manicure using The Gel Bottle Inc system</div>
+              <div style={mobilestyles.mobileList}>Footlogix pedicure system</div>
+              <div style={mobilestyles.mobileList}>Spray Tans using Nouvatan products</div>
+              <div style={mobilestyles.mobileList}>Manicure treatments</div>
+              <div style={mobilestyles.mobileList}>Pedicure treatments</div>
+              <div style={mobilestyles.mobileList}>We also specialise in Hollywood and Brazillian female intimate waxing</div>
 
-                <div style={mobilestyles.infoTextTitle}>Our beauty treatments include:</div>
-                <div style={mobilestyles.infoText}>
-                  <li>  The Gel Bottle Inc, Gel Polish Nails</li>
-                  <li>  The Gel Bottle Inc, Gel Nail Extensions</li>
-                  <li>  Footlogix Pedicure</li>
-                  <li>  Brazillian and Hollywood Female Intimate Waxing</li>
-                  <li>  All other Waxing treatments</li>
-                  <li>  Eyelash Tinting and Eyebrow Tinting</li>
-                </div>
-
-
-                <div style={{ position: 'relative', float: 'left', width: '35vw', margin: '5vw', paddingTop: '3vh', marginBottom: '5vh' }}>
-                  <Scrollchor style={{ 'textDecoration': 'none' }} animate={{ offset: -140 }} to="#treatments" >
-                    <Button input={'VIEW ALL TREATMENTS'}/>
-                  </Scrollchor>
-               </div>
-                <div style={{ position: 'relative', float: 'left', width: '35vw', margin: '5vw', paddingTop: '3vh', marginBottom: '5vh' }}>
-                  <Scrollchor style={{ 'textDecoration': 'none' }} animate={{ offset: -140 }} to="#contact" >
-                    <Button input={'BOOK AN APPOINTMENT'}/>
-                  </Scrollchor>
-                </div>
-              </div>
+              <div style={mobilestyles.mobileText}>{body_2}</div>
             </div>
           </MobileView>
 

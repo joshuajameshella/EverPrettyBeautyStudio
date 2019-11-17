@@ -7,4 +7,11 @@ export const styles = {
     maxWidth: '100%',
     height: '85vh',
   },
+  treatmentsHolder: {
+    width: '80vw',
+    height: '60vh',
+    marginTop: '10vh',
+    marginLeft: '10vw',
+    backgroundColor: 'rgb(255, 255, 255)',
+  }
 };
