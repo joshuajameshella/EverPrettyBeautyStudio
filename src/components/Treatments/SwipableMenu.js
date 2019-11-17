@@ -33,11 +33,11 @@ class SwipableMenu extends Component {
           </div>
 
           <div style={Object.assign({}, styles.slide, styles.slide1)}>
-            <img style={this.props.style} src={require("../../images/treatments/page1.png")} alt={"page two of treatments"}/>
+            <img style={this.props.style} src={require("../../images/treatments/page2.png")} alt={"page two of treatments"}/>
           </div>
 
           <div style={Object.assign({}, styles.slide, styles.slide2)}>
-            <img style={this.props.style} src={require("../../images/treatments/page2.png")} alt={"page three of treatments"}/>
+            <img style={this.props.style} src={require("../../images/treatments/page3.png")} alt={"page three of treatments"}/>
           </div>
 
           <div style={Object.assign({}, styles.slide, styles.slide3)}>
