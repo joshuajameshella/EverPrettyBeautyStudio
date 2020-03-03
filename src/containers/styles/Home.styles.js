@@ -45,7 +45,8 @@ export const styles = {
     position: 'relative',
     float: 'left',
     width: '100vw',
-    height: '85vh',
+    minHeight: '85vh',
+    overflow: 'hidden',
     backgroundColor: 'rgba(222, 191, 191, 0.6)',
 
     color: 'rgb(82, 82, 82)',

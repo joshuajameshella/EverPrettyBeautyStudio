@@ -13,10 +13,6 @@ class Slider extends Component {
       <div>
         <BrowserView>
           <div style={this.props.style}>
-            {this.props.motto ?
-              <img src={motto_image} alt={"Ever Pretty Beauty Studio"} style={{ width: '50vw', position: 'absolute', zIndex: 30, left: '25vw', top: '40vh' }} />
-              : ""
-            }
             <Slideshow
               showIndex
               showArrows

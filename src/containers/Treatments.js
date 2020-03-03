@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { styles } from './styles/Treatments.styles';
 import { BrowserView, MobileView } from "react-device-detect";
-import SwipableMenu from '../components/Treatments/SwipableMenu';
+import SwipableMenu from '../components/Treatments/ScrollableMenu';
 import DesktopMenu from '../components/Treatments/DesktopMenu';
 
 class Treatments extends Component {
@@ -35,7 +35,7 @@ class Treatments extends Component {
         <div style={styles.treatmentsHolder}>
 
           <BrowserView>
-            {this.state.width < 1090 ?
+            {this.state.width < 1300 ?
               <SwipableMenu style={{ height: '75vh', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
               :
               <DesktopMenu />

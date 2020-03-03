@@ -5,13 +5,22 @@ export const styles = {
     float: 'left',
     width: '80vw',
     height: 'calc(85vh - 30vh)',
-    backgroundColor: 'rgba(100, 100, 100, 0.1)',
+    backgroundColor: 'rgba(251, 204, 209, 0.25)',
     marginLeft: '10vw',
     marginRight: '10vw',
     marginTop: '15vh',
     marginBottom: '15vh',
     zIndex: 10,
   },
+
+  aboutBackground: {
+    position: 'relative',
+    float: 'left',
+    width: '100vw',
+    height: '(80vh - 140px)',
+    zIndex: 10,
+  },
+
   webHeader: {
     position: 'relative',
     float: 'left',
@@ -32,7 +41,7 @@ export const styles = {
     marginBottom: 20,
     textAlign: 'center',
     fontFamily: 'Muli, sans-serif',
-    color: 'rgb(52, 52, 52)',
+    color: 'rgb(122, 122, 122)',
   },
   webList: {
     position: 'relative',

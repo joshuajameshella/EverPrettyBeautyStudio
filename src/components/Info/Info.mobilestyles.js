@@ -9,7 +9,7 @@ export const mobilestyles = {
     marginRight: '5vw',
     marginTop: '5vh',
     marginBottom: '5vh',
-    backgroundColor: 'rgba(100, 100, 100, 0.1)',
+    backgroundColor: 'rgba(251, 204, 209, 0.25)',
   },
 
   mobileHeader: {
@@ -19,6 +19,7 @@ export const mobilestyles = {
     textAlign: 'center',
     fontSize: 40,
     marginTop: 20,
+    marginBottom: 40,
     fontFamily: 'Nothing You Could Do, cursive'
   },
   mobileText: {
@@ -27,9 +28,9 @@ export const mobilestyles = {
     width: '80%',
     marginLeft: '10%',
     marginRight: '10%',
-    marginTop: 20,
+    marginTop: 15,
     fontSize: 14,
-    marginBottom: 20,
+    marginBottom: 15,
     textAlign: 'center',
     fontFamily: 'Muli, sans-serif',
     color: 'rgb(52, 52, 52)',

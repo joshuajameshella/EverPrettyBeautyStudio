@@ -33,7 +33,6 @@ class ContactTabs extends React.Component {
 
         <div style={styles.infoContainerMobile}>
           <h1 style={styles.mobileTitle}>Contact Us</h1>
-          <div style={styles.subTitleMobile}>Simply call if you wish to book an appointment or speak to us.</div>
         </div>
 
         <Tabs
@@ -51,31 +50,33 @@ class ContactTabs extends React.Component {
 
         {value === 0 &&
           <TabContainer>
-              <div style={styles.infoHolderMobile}>
+              <Paper style={styles.infoHolderMobile}>
                 <div style={styles.text}>Opening Times</div>
-                <div style={styles.dataLeft}>MON</div><div style={styles.dataRight}>10:00 to 17:00</div>
-                <div style={styles.dataLeft}>TUE</div><div style={styles.dataRight}>10:00 to 17:00</div>
-                <div style={styles.dataLeft}>WED</div><div style={styles.dataRight}>10:00 to late</div>
-                <div style={styles.dataLeft}>THU</div><div style={styles.dataRight}>10:00 to 17:00</div>
-                <div style={styles.dataLeft}>FRI</div><div style={styles.dataRight}>10:00 to 17:00</div>
-                <div style={styles.dataLeft}>SAT</div><div style={styles.dataRight}>call for availability</div>
+                <div style={styles.dataLeft}>MON</div><div style={styles.dataRight}>10am to 5pm</div>
+                <div style={styles.dataLeft}>TUE</div><div style={styles.dataRight}>10am to 5pm</div>
+                <div style={styles.dataLeft}>WED</div><div style={styles.dataRight}>10am to late</div>
+                <div style={styles.dataLeft}>THU</div><div style={styles.dataRight}>10am to 5pm</div>
+                <div style={styles.dataLeft}>FRI</div><div style={styles.dataRight}>10am to 5pm</div>
+                <div style={styles.dataLeft}>SAT</div><div style={styles.dataRight}>closed</div>
                 <div style={styles.dataLeft}>SUN</div><div style={styles.dataRight}>closed</div>
-              </div>
+              </Paper>
 
-              <div style={styles.infoHolderMobile}>
+              <Paper style={styles.infoHolderMobile}>
                 <div style={styles.text}>Contact</div>
                 <div style={styles.data}>01132 887219</div>
                 <div style={styles.data}>hello@everprettybeautystudio.co.uk</div>
-              </div>
+              </Paper>
 
-              <div style={styles.infoHolderMobile}>
+              <Paper style={styles.infoHolderMobile}>
                 <div style={styles.text}>Address</div>
                 <div style={styles.data}>Iveridge Hall</div>
                 <div style={styles.data}>Wakefield Road</div>
                 <div style={styles.data}>Oulton</div>
                 <div style={styles.data}>Leeds</div>
                 <div style={styles.data}>LS26 8EU</div>
-              </div>
+              </Paper>
+
+              <div style={{ position: 'relative', float: 'left', width: '100%', height: 50 }}/>
           </TabContainer>
         }
 

@@ -16,14 +16,16 @@ class Contact extends Component {
           <div style={styles.infoContainer}>
 
             <div style={styles.infoHolder}>
-              <div style={styles.text}>Opening Times</div>
-              <div style={styles.dataLeft}>MON</div><div style={styles.dataRight}>10:00 to 17:00</div>
-              <div style={styles.dataLeft}>TUE</div><div style={styles.dataRight}>10:00 to 17:00</div>
-              <div style={styles.dataLeft}>WED</div><div style={styles.dataRight}>10:00 to Late</div>
-              <div style={styles.dataLeft}>THU</div><div style={styles.dataRight}>10:00 to 17:00</div>
-              <div style={styles.dataLeft}>FRI</div><div style={styles.dataRight}>10:00 to 17:00</div>
-              <div style={styles.dataLeft}>SAT</div><div style={styles.dataRight}>Please call for availability</div>
-              <div style={styles.dataLeft}>SUN</div><div style={styles.dataRight}>Closed</div>
+                <div style={styles.text}>Opening Times</div>
+                <div style={styles.openingTimesHolder}>
+                  <div style={styles.dataLeft}>MON</div><div style={styles.dataRight}>10am to 5pm</div>
+                  <div style={styles.dataLeft}>TUE</div><div style={styles.dataRight}>10am to 5pm</div>
+                  <div style={styles.dataLeft}>WED</div><div style={styles.dataRight}>10am to Late</div>
+                  <div style={styles.dataLeft}>THU</div><div style={styles.dataRight}>10am to 5pm</div>
+                  <div style={styles.dataLeft}>FRI</div><div style={styles.dataRight}>10am to 5pm</div>
+                  <div style={styles.dataLeft}>SAT</div><div style={styles.dataRight}>Closed</div>
+                  <div style={styles.dataLeft}>SUN</div><div style={styles.dataRight}>Closed</div>
+                </div>
             </div>
 
             <div style={styles.infoHolder}>

@@ -12,9 +12,9 @@ import { styles } from './styles/Home.styles';
 
 const slides = [
   require('../images/1.png'),
-  require('../images/3.jpeg'),
-  require('../images/4.jpeg'),
-  require('../images/5.jpeg'),
+  require('../images/2.png'),
+  require('../images/3.png'),
+  require('../images/4.png'),
 ];
 
 const slideshowWeb = {
@@ -35,7 +35,7 @@ class Home extends Component {
           <Header />
         </div>
 
-        <Slideshow images={slides} motto={true} height={'100%'} width={'100%'} style={slideshowWeb} />
+        <Slideshow images={slides} motto={false} height={'100%'} width={'100%'} style={slideshowWeb} />
 
         <div id="about" style={styles.aboutContainer}>
           <Info />

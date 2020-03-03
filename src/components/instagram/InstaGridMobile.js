@@ -4,7 +4,6 @@ import Grid from '@material-ui/core/Grid';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import compose from 'recompose/compose';
 
-
 export type Props = {
  media?: Array<{
    displayImage: string,
@@ -23,7 +22,7 @@ const InstaGridMobile = ({ classes, media, account, status}: Props) => {
      {media &&
        status === 'completed' &&
        media.map(({ displayImage, id, postLink, accessibilityCaption }) => (
-         <Grid item xs={6} sm={2} md={2} key={id || displayImage}>
+         <Grid container item xs={6} spacing={12} key={id || displayImage}>
            <ButtonBase href={postLink || `https://www.instagram.com/${account}/`}>
              <img style={{ width: '96%', padding: '2%' }} src={displayImage} alt={"Instagram link"} />
            </ButtonBase>

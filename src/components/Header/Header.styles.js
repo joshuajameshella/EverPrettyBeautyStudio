@@ -10,7 +10,7 @@ export const styles = {
     fontFamily: 'Muli, sans-serif',
   },
   logoBig: {
-    height: 140,
+    width: '30vw',
     marginTop: 20,
     display: 'block',
     marginLeft: 'auto',
@@ -91,7 +91,7 @@ export const styles = {
     width: '100vw',
     height: '85vh',
     marginTop: '15vh',
-    backgroundColor: 'rgb(220, 220, 220)',
+    backgroundColor: 'rgba(220, 220, 220, 0.3)',
     paddingTop: '5vh',
     fontSize: 20,
     fontWeight: 300,

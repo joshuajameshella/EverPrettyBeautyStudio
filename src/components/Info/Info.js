@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { BrowserView, MobileView } from "react-device-detect";
+import ReactFitText from "react-fittext";
 
-import { body_1, body_2 } from './text.js';
+import { body_1, body_2, body_3, body_4 } from './text.js';
 import { styles } from './Info.styles';
 import { mobilestyles } from './Info.mobilestyles';
-
-
 
 
 class Info extends Component {
@@ -36,25 +35,22 @@ class Info extends Component {
     return (
       <div>
           <BrowserView>
-            <div style={styles.imageContainer}>
-              <img style={styles.iconOne} src={require("../../images/about/flower1.png")} alt={"flower one"}></img>
-              {this.state.width < 1150 ? "" :
-                <img style={styles.iconTwo} src={require("../../images/about/flower2.png")} alt={"flower two"}></img>
-              }
-            </div>
             <div style={styles.webInfo}>
+
               <div style={styles.webHeader}>About Us</div>
 
-              <div style={styles.webText}>{body_1}</div>
-
-              <div style={styles.webList}>Gel manicure using The Gel Bottle Inc system</div>
-              <div style={styles.webList}>Footlogix pedicure system</div>
-              <div style={styles.webList}>Spray Tans using Nouvatan products</div>
-              <div style={styles.webList}>Manicure treatments</div>
-              <div style={styles.webList}>Pedicure treatments</div>
-              <div style={styles.webList}>We also specialise in Hollywood and Brazillian female intimate waxing</div>
-
-              <div style={styles.webText}>{body_2}</div>
+              <ReactFitText compressor={6}>
+                <div style={styles.webText}>{body_1}</div>
+              </ReactFitText>
+              <ReactFitText compressor={6}>
+                <div style={styles.webText}>{body_2}</div>
+              </ReactFitText>
+              <ReactFitText compressor={6}>
+                <div style={styles.webText}>{body_3}</div>
+              </ReactFitText>
+              <ReactFitText compressor={6}>
+                <div style={styles.webText}>{body_4}</div>
+              </ReactFitText>
             </div>
           </BrowserView>
 
@@ -62,16 +58,19 @@ class Info extends Component {
             <div style={mobilestyles.mobileInfo}>
               <div style={mobilestyles.mobileHeader}>About Us</div>
 
-              <div style={mobilestyles.mobileText}>{body_1}</div>
+              <ReactFitText compressor={3}>
+                <div style={styles.webText}>{body_1}</div>
+              </ReactFitText>
+              <ReactFitText compressor={3}>
+                <div style={styles.webText}>{body_2}</div>
+              </ReactFitText>
+              <ReactFitText compressor={3}>
+                <div style={styles.webText}>{body_3}</div>
+              </ReactFitText>
+              <ReactFitText compressor={3}>
+                <div style={styles.webText}>{body_4}</div>
+              </ReactFitText>
 
-              <div style={mobilestyles.mobileList}>Gel manicure using The Gel Bottle Inc system</div>
-              <div style={mobilestyles.mobileList}>Footlogix pedicure system</div>
-              <div style={mobilestyles.mobileList}>Spray Tans using Nouvatan products</div>
-              <div style={mobilestyles.mobileList}>Manicure treatments</div>
-              <div style={mobilestyles.mobileList}>Pedicure treatments</div>
-              <div style={mobilestyles.mobileList}>We also specialise in Hollywood and Brazillian female intimate waxing</div>
-
-              <div style={mobilestyles.mobileText}>{body_2}</div>
             </div>
           </MobileView>
 

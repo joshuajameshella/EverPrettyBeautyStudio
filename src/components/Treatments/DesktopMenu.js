@@ -22,29 +22,6 @@ class DesktopMenu extends Component {
       <div style={styles.main}>
 
         <div style={styles.container}>
-          <div style={styles.title}>Tinting</div>
-          <div style={styles.subTitleMain}>{'A patch test is required at least 24h prior to an appointment'}</div>
-          <MenuItem description="Eyebrow Tint" additional="" price="7.00" subtitle="" />
-          <MenuItem description="Eyelash Tint" additional="" price="12.00" subtitle="" />
-          <MenuItem description="Eyebrow & Eyelash Tint" additional="" price="16.00" subtitle="" />
-
-          <div style={{ position: 'relative', float: 'left', width: 100, marginTop: 50 }}></div>
-
-          <div style={styles.title}>Waxing</div>
-          <div style={styles.subTitleMain}>{'All waxing treatments are performed using the superior Ashmira Botanica strip and non-strip waxes for a meticulous and comfortable result'}</div>
-          <MenuItem description="Eyebrow Wax" additional="" price="7.00" subtitle="" />
-          <MenuItem description="Lip or Chin Wax" additional="" price="7.00" subtitle="" />
-          <MenuItem description="Lip & Chin Wax" additional="" price="12.00" subtitle="" />
-          <MenuItem description="Underarm Wax" additional="" price="10.00" subtitle="" />
-          <MenuItem description="Half Leg Wax" additional="" price="18.00" subtitle="" />
-          <MenuItem description="Full Leg Wax" additional="" price="22.00" subtitle="" />
-          <MenuItem description="Standard Bikini Wax" additional="" price="10.00" subtitle="- hair is removed up to the knicker line and crease of the leg" />
-          <MenuItem description="Extended Bikini Wax" additional="" price="15.00" subtitle="- hair is removed further past the knicker line and crease of the leg" />
-          <MenuItem description="Brazillian Wax" additional="" price="30.00" subtitle="- all hair is removed, leaving a small landing strip" />
-          <MenuItem description="Hollywood Wax" additional="" price="30.00" subtitle="- all hair is removed" />
-        </div>
-
-        <div style={styles.container}>
           <div style={styles.title}>Hands</div>
           <div style={styles.subTitleMain}>{'Our manicure treatment helps maintain healthy nails and skin as well as promote natural nail growth to ensure your nails and skil look their best at all times'}</div>
           <MenuItem description="CND Spa Manicure" additional="" price="25.00" subtitle="" />
@@ -89,10 +66,35 @@ class DesktopMenu extends Component {
           <MenuItem description="Full Body Spray Tan" additional="" price="20.00" subtitle="" />
 
           <div style={{ position: 'relative', float: 'left', width: 100, marginTop: 40 }}></div>
+        </div>
 
-          <div style={styles.title}>Cancellation Policy</div>
+        <div style={styles.container}>
+          <div style={styles.title}>Tinting</div>
+          <div style={styles.subTitleMain}>{'A patch test is required at least 24h prior to an appointment'}</div>
+          <MenuItem description="Eyebrow Tint" additional="" price="7.00" subtitle="" />
+          <MenuItem description="Eyelash Tint" additional="" price="12.00" subtitle="" />
+          <MenuItem description="Eyebrow & Eyelash Tint" additional="" price="16.00" subtitle="" />
+
+          <div style={{ position: 'relative', float: 'left', width: 100, marginTop: 15 }}></div>
+
+          <div style={styles.title}>Waxing</div>
+          <div style={styles.subTitleMain}>{'All waxing treatments are performed using the superior Ashmira Botanica strip and non-strip waxes for a meticulous and comfortable result'}</div>
+          <MenuItem description="Eyebrow Wax" additional="" price="7.00" subtitle="" />
+          <MenuItem description="Lip or Chin Wax" additional="" price="7.00" subtitle="" />
+          <MenuItem description="Lip & Chin Wax" additional="" price="12.00" subtitle="" />
+          <MenuItem description="Underarm Wax" additional="" price="10.00" subtitle="" />
+          <MenuItem description="Half Leg Wax" additional="" price="18.00" subtitle="" />
+          <MenuItem description="Full Leg Wax" additional="" price="22.00" subtitle="" />
+          <MenuItem description="Standard Bikini Wax" additional="" price="10.00" subtitle="- hair is removed up to the knicker line and crease of the leg" />
+          <MenuItem description="Extended Bikini Wax" additional="" price="15.00" subtitle="- hair is removed further past the knicker line and crease of the leg" />
+          <MenuItem description="Brazillian Wax" additional="" price="30.00" subtitle="- all hair is removed, leaving a small landing strip" />
+          <MenuItem description="Hollywood Wax" additional="" price="30.00" subtitle="- all hair is removed" />
+        </div>
+
+        <div style={styles.footer}>
           <div style={styles.subTitleMain}>{`24 hours notice is required to cancel or re-schedule any appointment. Failure to give the required notice may result in a 50% charge of the total appointment cost. All 'no show' appointments will incur a cancellation fee of 100% of the total appointment cost`}</div>
         </div>
+
 
       </div>
     );

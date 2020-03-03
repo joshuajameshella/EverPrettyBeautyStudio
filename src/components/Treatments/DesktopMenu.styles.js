@@ -1,8 +1,9 @@
 export const styles = {
   main: {
     position: 'absolute',
-    width: '100%',
+    width: '80%',
     height: '100%',
+    overflowY: 'hidden',
   },
   container: {
     position: 'relative',
@@ -22,6 +23,17 @@ export const styles = {
     marginTop: 10,
     marginBottom: 10,
   },
+  subtext: {
+    position: 'relative',
+    float: 'left',
+    width: 'calc(100% - 10px)',
+    marginTop: -30,
+    marginBottom: 35,
+    marginLeft: 3,
+    marginRight: 5,
+    fontSize: 9,
+    color: 'rgba(100, 100, 100, 1)',
+  },
   subTitleMain: {
     position: 'relative',
     float: 'left',
@@ -30,7 +42,7 @@ export const styles = {
     marginLeft: 3,
     marginRight: 5,
     fontSize: 9,
-    color: '#d65e5b',
+    color: 'rgba(100, 100, 100, 1)',
   },
   subTitle: {
     position: 'relative',
@@ -40,7 +52,7 @@ export const styles = {
     marginLeft: 3,
     marginRight: 5,
     fontSize: 8,
-    color: '#d65e5b',
+    color: 'rgba(100, 100, 100, 1)',
   },
   itemName: {
     position: 'relative',
@@ -60,7 +72,23 @@ export const styles = {
     marginTop: 6,
     marginLeft: 5,
     marginRight: 5,
-    color: '#d65e5b',
+    color: 'rgba(100, 100, 100, 1)',
+  },
+  footer: {
+    width: '50%',
+    padding: 30,
+    float: 'right',
+    position: 'static',
+    bottom: 0
+  },
+
+  test: {
+    position: 'relative',
+    float: 'left',
+    overflowY: 'scroll',
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(1, 1, 1, 0.1)',
   }
 
 

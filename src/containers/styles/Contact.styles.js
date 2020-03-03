@@ -83,6 +83,9 @@ export const styles = {
     paddingBottom: 10,
     borderBottom: '1px solid rgb(150, 150, 150)'
   },
+  openingTimesHolder: {
+    width: '100%',
+  },
   data: {
     position: 'relative',
     width: '100%',
@@ -95,21 +98,32 @@ export const styles = {
   },
   dataLeft: {
     position: 'relative',
-    width: '20%',
+    width: '30%',
     float: 'left',
     color: 'rgb(150,150,150)',
     fontSize: 15,
     zIndex: 2,
-    textAlign: 'right',
+    textAlign: 'left',
   },
   dataRight: {
     position: 'relative',
-    width: '70%',
-    marginLeft: '10%',
-    float: 'left',
+    width: '50%',
+    float: 'right',
     color: 'rgb(150,150,150)',
     fontSize: 15,
     zIndex: 2,
-    textAlign: 'right',
-  }
+    textAlign: 'left',
+  },
+
+  day: {
+    position: 'relative',
+    float: 'left',
+    width: '40%',
+  },
+  time: {
+    position: 'relative',
+    float: 'right',
+    marginLeft: '10%',
+    width: '50%',
+  },
 };
