@@ -5,14 +5,27 @@ export const styles = {
     width: '100%',
     backgroundColor: 'rgba(251, 204, 209, 0.25)',
   },
+
+  headerMobile: {
+    position: 'relative',
+    float: 'left',
+    textAlign: 'center',
+    width: '100%',
+    marginTop: 40,
+    paddingBottom: 20,
+    fontFamily: 'Nothing You Could Do, cursive',
+    fontSize: 'calc(15px + 2.5vw)',
+    borderBottom: '1px solid rgba(0, 0, 0, 0.3)',
+  },
+
   mapContainer: {
     position: 'relative',
     width: '100vw',
     bottom: 0,
-    left: -23,
-    height: '50vh',
+    left: -25,
+    height: '70vh',
     zIndex: 0,
-    overflow: 'hidden',
+    // overflow: 'hidden',
   },
   infoContainerMobile: {
     position: 'relative',

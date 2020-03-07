@@ -4,7 +4,7 @@ export const styles = {
     float: 'left',
     top: 0,
     left: 0,
-    width: '100vw',
+    width: '100%',
     overflowX: 'hidden',
     backgroundColor: 'rgb(255, 255, 255)',
   },

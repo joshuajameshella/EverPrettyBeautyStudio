@@ -29,10 +29,10 @@ class ContactTabs extends React.Component {
 
     return (
 
-      <Paper styles={{ flexGrow: 1, zIndex: 10 }}>
+      <div styles={{ flexGrow: 1, zIndex: 10 }}>
 
         <div style={styles.infoContainerMobile}>
-          <h1 style={styles.mobileTitle}>Contact Us</h1>
+          <h1 style={styles.headerMobile}>Contact Us</h1>
         </div>
 
         <Tabs
@@ -52,13 +52,13 @@ class ContactTabs extends React.Component {
           <TabContainer>
               <Paper style={styles.infoHolderMobile}>
                 <div style={styles.text}>Opening Times</div>
-                <div style={styles.dataLeft}>MON</div><div style={styles.dataRight}>10am to 5pm</div>
-                <div style={styles.dataLeft}>TUE</div><div style={styles.dataRight}>10am to 5pm</div>
-                <div style={styles.dataLeft}>WED</div><div style={styles.dataRight}>10am to late</div>
-                <div style={styles.dataLeft}>THU</div><div style={styles.dataRight}>10am to 5pm</div>
-                <div style={styles.dataLeft}>FRI</div><div style={styles.dataRight}>10am to 5pm</div>
-                <div style={styles.dataLeft}>SAT</div><div style={styles.dataRight}>closed</div>
-                <div style={styles.dataLeft}>SUN</div><div style={styles.dataRight}>closed</div>
+                <div style={styles.dataLeft}>MON</div><div style={styles.dataRight}>10am - 5pm</div>
+                <div style={styles.dataLeft}>TUE</div><div style={styles.dataRight}>10am - 5pm</div>
+                <div style={styles.dataLeft}>WED</div><div style={styles.dataRight}>10am - Late</div>
+                <div style={styles.dataLeft}>THU</div><div style={styles.dataRight}>10am - Late</div>
+                <div style={styles.dataLeft}>FRI</div><div style={styles.dataRight}>10am - 5pm</div>
+                <div style={styles.dataLeft}>SAT</div><div style={styles.dataRight}>Closed</div>
+                <div style={styles.dataLeft}>SUN</div><div style={styles.dataRight}>Closed</div>
               </Paper>
 
               <Paper style={styles.infoHolderMobile}>
@@ -88,7 +88,7 @@ class ContactTabs extends React.Component {
           </TabContainer>
         }
 
-      </Paper>
+      </div>
     );
   }
 }

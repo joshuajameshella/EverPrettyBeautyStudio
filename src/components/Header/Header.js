@@ -3,12 +3,15 @@ import HamburgerSpring from './Hamburger/HamburgerSpring.js';
 import Paper from '@material-ui/core/Paper';
 import Collapse from '@material-ui/core/Collapse';
 import { BrowserView, MobileView } from "react-device-detect";
-
+import IconButton from '@material-ui/core/IconButton';
+import Tooltip from '@material-ui/core/Tooltip';
 import Scrollchor from 'react-scrollchor';
 
 import './stylesheet.css';
 import { styles } from './Header.styles';
 import logo from '../../images/logo.png';
+import facebook_icon from '../../images/facebook_big.png';
+import instagram_icon from '../../images/instagram_big.png';
 
 
 
@@ -24,8 +27,20 @@ const renderBig = () => (
     </Scrollchor>
 
     <nav style={styles.rightHolder}>
-      <Scrollchor style={styles.rightLink} animate={{ offset: -140 }} to="#gallery" >GALLERY</Scrollchor>
       <Scrollchor style={styles.rightLink} animate={{ offset: -140 }} to="#contact" >CONTACT</Scrollchor>
+      <div style={styles.socialMedia}>
+        <Tooltip title={'Facebook'}>
+          <IconButton onClick={() => window.open('https://www.facebook.com/everprettybeautystudio/','_blank')} style={{ position: 'relative', float: 'left', width: '35%', marginLeft: '7.5%', marginRight: '7.5%' }}>
+            <img alt={'Facebook'} style={{ maxWidth: 20, opacity: 0.75 }} src={facebook_icon} />
+          </IconButton>
+        </Tooltip>
+        <div style={{ position: 'relative', float: 'left', width: 40 }} />
+        <Tooltip title={'Instagram'}>
+          <IconButton onClick={() => window.open('https://www.instagram.com/everprettybeautystudio/?hl=en','_blank')} style={{ position: 'relative', float: 'left', width: '35%', marginLeft: '7.5%', marginRight: '7.5%' }}>
+            <img alt={'Instagram'} style={{ maxWidth: 20, opacity: 0.75 }} src={instagram_icon} />
+          </IconButton>
+        </Tooltip>
+      </div>
     </nav>
   </div>
 );
@@ -99,8 +114,20 @@ class Header extends Component {
                 <nav style={styles.dropdownMenu}>
                   <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} animate={{ offset: -140 }} to="#about" >ABOUT</Scrollchor>
                   <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} animate={{ offset: -140 }} to="#treatments" >TREATMENTS</Scrollchor>
-                  <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} animate={{ offset: -140 }} to="#gallery" >GALLERY</Scrollchor>
                   <Scrollchor style={styles.menuLink} beforeAnimate={this.toggleButton} animate={{ offset: -140 }} to="#contact" >CONTACT</Scrollchor>
+                  <div style={styles.socialMediaMenuLink}>
+                    <Tooltip title={'Facebook'}>
+                      <IconButton onClick={() => window.open('https://www.facebook.com/everprettybeautystudio/','_blank')} style={{ position: 'relative', float: 'left', width: '35%', marginLeft: '7.5%', marginRight: '7.5%' }}>
+                        <img alt={'Facebook'} style={{ maxWidth: 20, opacity: 0.75 }} src={facebook_icon} />
+                      </IconButton>
+                    </Tooltip>
+                    <div style={{ position: 'relative', float: 'left', width: 40 }} />
+                    <Tooltip title={'Instagram'}>
+                      <IconButton onClick={() => window.open('https://www.instagram.com/everprettybeautystudio/?hl=en','_blank')} style={{ position: 'relative', float: 'left', width: '35%', marginLeft: '7.5%', marginRight: '7.5%' }}>
+                        <img alt={'Instagram'} style={{ maxWidth: 20, opacity: 0.75 }} src={instagram_icon} />
+                      </IconButton>
+                    </Tooltip>
+                  </div>
                 </nav>
               </Paper>
             </Collapse>

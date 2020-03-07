@@ -63,6 +63,14 @@ export const styles = {
     textDecoration: 'none',
     color: 'rgb(80, 80, 80)',
   },
+  socialMedia: {
+    position: 'relative',
+    float: 'left',
+    marginLeft: '25%',
+    marginTop: '4.5vh',
+    textDecoration: 'none',
+    color: 'rgb(80, 80, 80)',
+  },
   menuHolder: {
     position: 'absolute',
     width: '20vw',
@@ -109,5 +117,16 @@ export const styles = {
     textAlign: 'center',
     color: 'rgb(80, 80, 80)',
   },
+  socialMediaMenuLink: {
+    position: 'relative',
+    float: 'left',
+    width: 150,
+    marginLeft: 'calc((100vw - 150px) / 2)',
+    marginRight: 'calc((100vw - 150px) / 2)',
+    marginTop: '10%',
+    textDecoration: 'none',
+    textAlign: 'center',
+    color: 'rgb(80, 80, 80)',
+  }
 
 };

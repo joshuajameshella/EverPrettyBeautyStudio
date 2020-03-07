@@ -47,7 +47,7 @@ export default class MapBox extends Component {
             'source': 'point',
             'layout': {
               'icon-image': 'marker',
-              'icon-size': 0.05
+              'icon-size': 0.03
             }
           });
         });
