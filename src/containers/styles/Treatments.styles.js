@@ -4,5 +4,6 @@ export const styles = {
     float: 'left',
     width: '100vw',
     maxWidth: '100%',
+    minHeight: '85vh',
   },
 };

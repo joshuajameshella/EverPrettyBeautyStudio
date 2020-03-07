@@ -33,7 +33,6 @@ export const styles = {
     position: 'relative',
     float: 'left',
     width: '100vw',
-    height: '85vh',
 
     color: 'rgb(82, 82, 82)',
     fontFamily: 'Muli, sans-serif',

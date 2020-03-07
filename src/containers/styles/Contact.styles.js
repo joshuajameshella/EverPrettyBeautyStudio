@@ -6,5 +6,4 @@ export const styles = {
     maxWidth: '100%',
     minHeight: '85vh',
   },
-  
 };
