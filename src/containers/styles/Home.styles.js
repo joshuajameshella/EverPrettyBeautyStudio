@@ -1,10 +1,11 @@
 export const styles = {
   main: {
-    position: 'absolute',
+    position: 'relative',
+    float: 'left',
     top: 0,
     left: 0,
     width: '100vw',
-    maxWidth: '100%',
+    overflowX: 'hidden',
     backgroundColor: 'rgb(255, 255, 255)',
   },
 
@@ -12,7 +13,6 @@ export const styles = {
     position: 'relative',
     float: 'left',
     width: '100vw',
-    height: '85vh',
     backgroundColor: '#ffffff',
 
     color: 'rgb(52, 52, 52)',
@@ -23,31 +23,7 @@ export const styles = {
     position: 'relative',
     float: 'left',
     width: '100vw',
-    height: '85vh',
-    backgroundColor: '#c1c9d0',
-
-    color: 'rgb(82, 82, 82)',
-    fontFamily: 'Muli, sans-serif',
-  },
-
-  reviewsContainer: {
-    position: 'relative',
-    float: 'left',
-    width: '100vw',
-    height: '85vh',
-    backgroundColor: 'rgba(222, 191, 191, 0.6)',
-
-    color: 'rgb(82, 82, 82)',
-    fontFamily: 'Muli, sans-serif',
-  },
-
-  galleryContainer: {
-    position: 'relative',
-    float: 'left',
-    width: '100vw',
-    minHeight: '85vh',
-    overflow: 'hidden',
-    backgroundColor: 'rgba(222, 191, 191, 0.6)',
+    backgroundColor: 'rgba(251, 204, 209, 0.25)',
 
     color: 'rgb(82, 82, 82)',
     fontFamily: 'Muli, sans-serif',
@@ -58,7 +34,6 @@ export const styles = {
     float: 'left',
     width: '100vw',
     height: '85vh',
-    // backgroundColor: '#e4d9d9',
 
     color: 'rgb(82, 82, 82)',
     fontFamily: 'Muli, sans-serif',

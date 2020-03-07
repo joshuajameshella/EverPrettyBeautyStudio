@@ -3,16 +3,15 @@ import PropTypes from 'prop-types';
 import { BrowserView, MobileView } from "react-device-detect";
 import Slideshow from './Slideshow/Slideshow.js';
 
-import motto_image from '../../images/motto.png';
 import { styles } from './Slider.styles.js';
 
 
 class Slider extends Component {
   render() {
     return (
-      <div>
+      <div style={{ position: 'relative', float: 'left', width: '100%', overflowX: 'hidden'}}>
         <BrowserView>
-          <div style={this.props.style}>
+          <div style={styles.slideshowDesktop}>
             <Slideshow
               showIndex
               showArrows
@@ -21,8 +20,8 @@ class Slider extends Component {
               effect={'fade'}
               slideInterval={4000}
               slides={this.props.images}
-              height={this.props.height}
-              width={this.props.width}>
+              height={'100%'}
+              width={'100%'}>
             </Slideshow>
           </div>
         </BrowserView>
@@ -52,8 +51,4 @@ export default Slider;
 
 Slider.propTypes = {
   images: PropTypes.array,
-  width: PropTypes.string,
-  height: PropTypes.string,
-  motto: PropTypes.bool,
-  style: PropTypes.object
 };

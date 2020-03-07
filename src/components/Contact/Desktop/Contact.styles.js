@@ -1,61 +1,49 @@
 export const styles = {
-  mapContainer: {
-    position: 'relative',
-    width: '100vw',
-    bottom: 0,
-    left: -23,
-    height: '50vh',
-    zIndex: 0,
-    overflow: 'hidden',
-  },
-  infoContainerMobile: {
-    position: 'relative',
-    width: '90vw',
-    marginLeft:'5vw',
-    height: 120,
-    top: 0,
-    left: 0,
-    zIndex: 0,
-  },
-  mobileTitle: {
-    marginTop: 50,
+
+  main: {
     position: 'relative',
     float: 'left',
     width: '100%',
-    color: 'rgb(100,100,100)',
-    fontSize: 30,
-    zIndex: 2,
-    textAlign: 'center',
+    borderTop: '1px solid rgba(0, 0, 0, 0.3)',
   },
-  infoHolderMobile: {
+
+  contactSection: {
     position: 'relative',
-    marginTop: 50,
-    padding: 20,
+    float: 'left',
+    width: '45%',
+    backgroundColor: 'rgba(1,1,1,0.1)',
+  },
+
+  mapSection: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    width: '45%',
+    height: '80vh',
+  },
+
+  column: {
+    position: 'relative',
+    float: 'left',
+    width: 'calc(10% - 2px)',
+    minHeight: 'calc(100vh - 140px)',
+    borderLeft: '1px solid rgba(0, 0, 0, 0.3)',
+    borderRight: '1px solid rgba(0, 0, 0, 0.3)',
+    overflow: 'hidden'
+  },
+
+  infoHolder: {
+    position: 'relative',
+    padding: 10,
+    marginTop: 10,
+    marginBottom: 10,
     float: 'left',
     width: '80%',
     marginLeft: 'calc(10% - 10px)',
     marginRight: 'calc(10% - 10px)',
     zIndex: 2,
   },
-  infoContainer: {
-    position: 'absolute',
-    width: '95vw',
-    paddingLeft:'5vw',
-    height: 'calc(100vh - 55vh - 140px)',
-    backgroundColor: 'rgb(255, 255, 255)',
-    bottom: 0,
-    left: 0,
-    zIndex: 0,
-  },
-  infoHolder: {
-    position: 'relative',
-    marginTop: 20,
-    float: 'left',
-    width: '23%',
-    marginLeft: '5%',
-    marginRight: '5%',
-    zIndex: 2,
-  },
+
   text: {
     position: 'relative',
     width: '100%',
@@ -68,6 +56,7 @@ export const styles = {
     paddingBottom: 10,
     borderBottom: '1px solid rgb(150, 150, 150)'
   },
+
   data: {
     position: 'relative',
     width: '100%',
@@ -78,6 +67,7 @@ export const styles = {
     zIndex: 2,
     textAlign: 'center',
   },
+
   dataLeft: {
     position: 'relative',
     width: '20%',
@@ -88,6 +78,7 @@ export const styles = {
     zIndex: 2,
     textAlign: 'left',
   },
+
   dataRight: {
     position: 'relative',
     width: '40%',
@@ -98,4 +89,5 @@ export const styles = {
     zIndex: 2,
     textAlign: 'left',
   },
+
 };

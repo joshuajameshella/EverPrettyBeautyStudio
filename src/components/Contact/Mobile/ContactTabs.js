@@ -1,6 +1,6 @@
 import React from 'react';
 import { styles } from './Contact.styles';
-import MapBox from '../Map/MapBox';
+import MapBox from '../../Map/MapBox';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';

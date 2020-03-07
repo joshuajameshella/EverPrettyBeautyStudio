@@ -6,7 +6,7 @@ export const styles = {
     width: '100vw',
     height: 140,
     backgroundColor: 'rgba(255, 255, 255, 1)',
-    zIndex: 15,
+    zIndex: 10,
     fontFamily: 'Muli, sans-serif',
   },
   logoBig: {
