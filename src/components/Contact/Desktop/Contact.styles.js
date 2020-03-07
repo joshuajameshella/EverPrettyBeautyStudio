@@ -4,6 +4,7 @@ export const styles = {
     position: 'relative',
     float: 'left',
     width: '100%',
+    minHeight: '80vh',
     borderTop: '1px solid rgba(0, 0, 0, 0.3)',
   },
 
@@ -11,15 +12,20 @@ export const styles = {
     position: 'relative',
     float: 'left',
     width: '45%',
-    backgroundColor: 'rgba(1,1,1,0.1)',
+    minHeight: 'calc(100vh - 140px)',
+    backgroundColor: 'rgba(1, 1, 1, 0.05)',
+    borderBottom: '1px solid rgba(0, 0, 0, 0.3)',
   },
 
-  mapSection: {
-    position: 'absolute',
-    top: 0,
-    right: 0,
-    width: '45%',
-    height: '80vh',
+  mapContainer: {
+    position: 'relative',
+    float: 'left',
+    width: '45vw',
+    height: 'calc(100vh - 140px)',
+    backgroundColor: '#ffffff',
+
+    color: 'rgb(52, 52, 52)',
+    fontFamily: 'Muli, sans-serif',
   },
 
   column: {
@@ -29,6 +35,7 @@ export const styles = {
     minHeight: 'calc(100vh - 140px)',
     borderLeft: '1px solid rgba(0, 0, 0, 0.3)',
     borderRight: '1px solid rgba(0, 0, 0, 0.3)',
+    borderBottom: '1px solid rgba(0, 0, 0, 0.3)',
     overflow: 'hidden'
   },
 
@@ -38,9 +45,9 @@ export const styles = {
     marginTop: 10,
     marginBottom: 10,
     float: 'left',
-    width: '80%',
-    marginLeft: 'calc(10% - 10px)',
-    marginRight: 'calc(10% - 10px)',
+    width: 'calc(80% - 20px)',
+    marginLeft: '10%',
+    marginRight: '10%',
     zIndex: 2,
   },
 

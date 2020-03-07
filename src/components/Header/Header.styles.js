@@ -4,10 +4,11 @@ export const styles = {
     top: 0,
     left: 0,
     width: '100vw',
-    height: 140,
+    minHeight: 140,
     backgroundColor: 'rgba(255, 255, 255, 1)',
     zIndex: 10,
     fontFamily: 'Muli, sans-serif',
+    borderBottom: '1px solid rgba(0, 0, 0, 0.3)',
   },
   logoBig: {
     width: '30vw',

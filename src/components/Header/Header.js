@@ -13,7 +13,7 @@ import logo from '../../images/logo.png';
 
 
 const renderBig = () => (
-  <div>
+  <div style={{ overflowX: 'hidden' }}>
     <nav style={styles.leftHolder}>
       <Scrollchor style={styles.leftLink} animate={{ offset: -140 }} to="#treatments" >TREATMENTS</Scrollchor>
       <Scrollchor style={styles.leftLink} animate={{ offset: -140 }} to="#about" >ABOUT</Scrollchor>

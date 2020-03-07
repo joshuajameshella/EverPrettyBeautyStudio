@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import mapboxgl from 'mapbox-gl';
 
-mapboxgl.accessToken = 'pk.eyJ1Ijoiam9zaHVhamFtZXNoZWxsIiwiYSI6ImNrMmt1MG95NzAwNzEzb3F1NDFibG9ka3YifQ.oYeItES8Jjm8wu1GGlNecw';
+mapboxgl.accessToken = 'pk.eyJ1Ijoiam9zaHVhamFtZXNoZWxsIiwiYSI6ImNrN2kzcHJscjBjM3kzZnByZTg3MWE1aHkifQ.ux_g44SHiS6gYkPJG1Rltw';
 
 export default class MapBox extends Component {
   constructor(props) {
@@ -57,7 +57,7 @@ export default class MapBox extends Component {
   render() {
     return (
       <div
-        style={{ position: 'absolute', top: 0, left: 0 }}
+        style={{ position: 'relative', float: 'left', width: '100%', height: '100%' }}
         ref={el => this.mapContainer = el}
       />
     )
