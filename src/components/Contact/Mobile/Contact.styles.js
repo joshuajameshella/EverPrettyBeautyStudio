@@ -25,8 +25,8 @@ export const styles = {
     left: -25,
     height: '70vh',
     zIndex: 0,
-    // overflow: 'hidden',
   },
+
   infoContainerMobile: {
     position: 'relative',
     width: '90vw',
@@ -36,6 +36,7 @@ export const styles = {
     left: 0,
     zIndex: 0,
   },
+
   mobileTitle: {
     marginTop: 50,
     position: 'relative',
@@ -46,6 +47,7 @@ export const styles = {
     zIndex: 2,
     textAlign: 'center',
   },
+
   infoHolderMobile: {
     position: 'relative',
     marginTop: 50,
@@ -66,6 +68,7 @@ export const styles = {
     left: 0,
     zIndex: 0,
   },
+
   infoHolder: {
     position: 'relative',
     marginTop: 20,
@@ -75,6 +78,7 @@ export const styles = {
     marginRight: '5%',
     zIndex: 2,
   },
+
   text: {
     position: 'relative',
     width: '100%',
@@ -87,6 +91,7 @@ export const styles = {
     paddingBottom: 10,
     borderBottom: '1px solid rgb(150, 150, 150)'
   },
+
   data: {
     position: 'relative',
     width: '100%',
@@ -97,6 +102,7 @@ export const styles = {
     zIndex: 2,
     textAlign: 'center',
   },
+
   dataLeft: {
     position: 'relative',
     width: '20%',
@@ -107,6 +113,7 @@ export const styles = {
     zIndex: 2,
     textAlign: 'left',
   },
+
   dataRight: {
     position: 'relative',
     width: '40%',
@@ -117,4 +124,5 @@ export const styles = {
     zIndex: 2,
     textAlign: 'left',
   },
+
 };
