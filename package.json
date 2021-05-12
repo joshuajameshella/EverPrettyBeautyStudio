@@ -13,7 +13,7 @@
     "react-scripts": "^3.4.0",
     "react-scrollbar": "^0.5.6",
     "react-slick": "^0.25.2",
-    "swiper": "^5.2.0"
+    "swiper": "^6.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
